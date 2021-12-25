@@ -3185,7 +3185,7 @@ canvas {
 .site-footer__top-inner {
     position: relative;
     display: block;
-    padding: 236px 0 120px;
+    padding: 136px 0 120px;
     z-index: 1;
 }
 
@@ -3523,6 +3523,7 @@ canvas {
     display: block;
     background-color: #eef3f7;
     padding: 0 0 120px;
+    margin-bottom: 60px;
     z-index: 1;
 }
 
@@ -4219,6 +4220,8 @@ canvas {
     position: relative;
     display: block;
     padding: 0 0 100px;
+    margin-bottom: 30px;
+    
 }
 
 .project-two__container {
@@ -5453,7 +5456,7 @@ canvas {
 
 /*Project Page*/
 .project-page {
-    padding: 120px 0 90px;
+    padding: 60px 0 90px;
 }
 
 .project-page .project-one__single {
@@ -6538,7 +6541,7 @@ canvas {
 .about-two {
     position: relative;
     display: block;
-    padding: 120px 0 120px;
+    padding: 60px 0 20px;
 }
 
 .about-two__left {
