@@ -4,44 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product &#8211; AVICCOMM</title>
+    <title>login &#8211; AVICCOMM</title>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="static/css/css2.css" rel="stylesheet">
+    <link href="../static/css/css2.css" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/animate.min.css">
-    <link rel="stylesheet" href="static/css/custom-animate.css">
-    <link rel="stylesheet" href="static/css/all.min.css">
-    <link rel="stylesheet" href="static/css/jarallax.css">
-    <link rel="stylesheet" href="static/css/jquery.magnific-popup.css">
-    <link rel="stylesheet" href="static/css/nouislider.min.css">
-    <link rel="stylesheet" href="static/css/nouislider.pips.css">
-    <link rel="stylesheet" href="static/css/odometer.min.css">
-    <link rel="stylesheet" href="static/css/swiper.min.css">
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="static/css/tiny-slider.min.css">
-    <link rel="stylesheet" href="static/css/stylesheet.css">
-    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="static/css/twentytwenty.css">
-    <link rel="stylesheet" href="static/css/jquery.bxslider.css">
-    <link rel="stylesheet" href="static/css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="static/css/vegas.min.css">
-    <link rel="stylesheet" href="static/css/jquery-ui.css">
-    <link rel="stylesheet" href="static/css/timePicker.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/animate.min.css">
+    <link rel="stylesheet" href="../static/css/custom-animate.css">
+    <link rel="stylesheet" href="../static/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/jarallax.css">
+    <link rel="stylesheet" href="../static/css/jquery.magnific-popup.css">
+    <link rel="stylesheet" href="../static/css/nouislider.min.css">
+    <link rel="stylesheet" href="../static/css/nouislider.pips.css">
+    <link rel="stylesheet" href="../static/css/odometer.min.css">
+    <link rel="stylesheet" href="../static/css/swiper.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/tiny-slider.min.css">
+    <link rel="stylesheet" href="../static/css/stylesheet.css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../static/css/twentytwenty.css">
+    <link rel="stylesheet" href="../static/css/jquery.bxslider.css">
+    <link rel="stylesheet" href="../static/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../static/css/vegas.min.css">
+    <link rel="stylesheet" href="../static/css/jquery-ui.css">
+    <link rel="stylesheet" href="../static/css/timePicker.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+    <link rel="stylesheet" href="../static/css/login.css">
 
     <!-- template styles -->
-    <link rel="stylesheet" href="static/css/izeetak.css">
-    <link rel="stylesheet" href="static/css/izeetak-responsive.css">
+    <link rel="stylesheet" href="../static/css/izeetak.css">
+    <link rel="stylesheet" href="../static/css/izeetak-responsive.css">
+    
 </head>
 
 <body>
     <div class="preloader">
-        <img class="preloader__image" width="60" src="static/picture/loader.png" alt="">
+        <img class="preloader__image" width="60" src="../static/picture/loader.png" alt="">
     </div>
     <!-- /.preloader -->
     <div class="page-wrapper">
@@ -86,39 +94,39 @@
                     <div class="main-menu-wrapper-inner clearfix">
                         <div class="main-menu-wrapper__left clearfix">
                             <div class="main-menu-wrapper__logo">
-                                <a href=""><img src="image/logo/logo.svg" alt=""></a>
+                                <a href=""><img src="../image/logo/logo.svg" alt=""></a>
                             </div>
                             <div class="main-menu-wrapper__main-menu">
                                 <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                 <ul class="main-menu__list">
                                     <li class="dropdown">
-                                        <a href="index.html">Home</a>
-                                        <ul><li><a href="index.html">Home One</a></li></ul>
+                                        <a href="../index.html">Home</a>
+                                        <ul><li><a href="../index.html">Home One</a></li></ul>
                                     </li>
-                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="../about.html">About</a></li>
                                     <li class="dropdown">
                                         <a href="#">Services</a>
                                         <ul>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="managed-it.html">Managed It</a></li>
-                                            <li><a href="it-support.html">IT Support</a></li>
+                                            <li><a href="../services.html">Services</a></li>
+                                            <li><a href="../managed-it.html">Managed It</a></li>
+                                            <li><a href="../it-support.html">IT Support</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown current">
+                                    <li class="dropdown">
                                         <a href="#">Products</a>
                                         <ul>
-                                            <li><a href="">Products</a></li>
-                                            <li><a href="product-details.html">Product Details</a></li>
+                                            <li><a href="../product.html">Products</a></li>
+                                            <li><a href="../product-details.html">Product Details</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#">News</a>
                                         <ul>
-                                            <li><a href="news.html">News</a></li>
-                                            <li><a href="news-details.html">News Details</a></li>
+                                            <li><a href="../news.html">News</a></li>
+                                            <li><a href="../news-details.html">News Details</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="../contact.html">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -134,7 +142,7 @@
                             </div>
                             <div class="main-menu-wrapper__search-box-cart-box">
                                 <a href="#" class="main-menu-wrapper__search search-toggler icon-magnifying-glass"></a>
-                                <a href="contact.html" class="main-menu-wrapper__cart icon-avatar"></a>
+                                <a href="login.html" class="main-menu-wrapper__cart icon-avatar"></a>
                             </div>
                         </div>
                     </div>
@@ -148,169 +156,78 @@
 
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg" style="background-image: url(image/page-header-bg.jpg)">
+            <div class="page-header-bg" style="background-image: url(../image/page-header-bg.jpg)">
             </div>
             <div class="page-header-bg-overly"></div>
             <div class="page-header-shape wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms" style="background-image: url(image/page-header-shape.png)"></div>
             <div class="container">
                 <div class="page-header__inner">
                     <ul class="thm-breadcrumb list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><span>/</span></li>
-                        <li>Products</li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><span>/pages/</span></li>
+                        <li>login</li>
                     </ul>
-                    <h2>Products</h2>
+                    <h2>login</h2>
                 </div>
             </div>
         </section>
         <!--Page Header End-->
 
-        <!--Projects Page Start-->
-        <section class="project-two project-page">
+        <!--Contact Page Start-->
+        <section class="contact-page" style="margin-top: -100px;"> 
+            <!-- contact form-->
+            <div class="container-fluid px-0 home-bgi3">
             <div class="container">
-                <div class="row">
-                     <!--             news 1--3             -->
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="100ms">
-                        <!--Project One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="image/product/GPS_001.jpg" alt="">
-                            </div>
-                            <div class="project-one__content">
-                                <p class="project-one__tagline">Antenna</p>
-                                <h2 class="project-one__title"><a href="project-details.html">GPS Antenna</a></h2>
-                                <div class="project-one__arrow">
-                                    <a href="project-details.html"><span class="icon-right-arrow"></span></a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-lg-6 d-lg-none"><img src="../image/home/bg3.jpg" alt="contact image"></div>
+
+                <div class="col-lg-6 col-md-12 col-12 mt-lg-1 mt-md-5 mt-4">
+                <section class="wrapper style1 align-center" id="form">
+                  <div id = "login" class = "index align-center">
+                    <form>
+                    <div class="fields stacked">
+                        <a href="../index.html"><i class="fab fa fa-home"></i>Home</a>
+                        <h2>Welcome to https://aviccomm.net</h2>
+                        <p> Please contact <b>lz284@njit.edu</b> if you have any questions.</p>
+                    
+                      
+                      <div id = "login-form" class="field">
+                        <input type="email" name="email" id="email" value="" required style="text-align: center;"/>
+                        <label for="username">Email</label>
+                      </div>
+                      <div class="field">
+                        <input type="password" name="password" id="password" value="" required style="text-align: center;"/>
+                        <label for="password">PWD</label>
+                      </div>
+                    
+                      <!--
+                      <div class="field half align-left">
+                        <input type="checkbox required" id="human" name="human" value = "" />
+                        <label for="human">Not a Robot</label>
+                        <p></p>
+                      </div>s
+                    -->
+                      <div class="actions align-center">
+                        <p></p>
+                        <a id="login-button" class="button big wide smooth-scroll-middle thm-btn" style="padding: 10px 70px 10px;">Login&nbsp;&nbsp;</a> 
+
+                      </div>
+                      <div class="actions align-center">
+                        <p></p>
+                        <a id="forgot-password-button" class="button big wide smooth-scroll-middle thm-btn" style="padding: 10px 15px 10px;">Forgot Password&nbsp;&nbsp;</a>                                        
+                      </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                        <!--Project One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="image/product/GPS_002.jpg" alt="">
-                            </div>
-                            <div class="project-one__content">
-                                <p class="project-one__tagline">Antenna</p>
-                                <h2 class="project-one__title"><a href="project-details.html">GSM Antenna</a></h2>
-                                <div class="project-one__arrow">
-                                    <a href="project-details.html"><span class="icon-right-arrow"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="300ms">
-                        <!--Project One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="image/product/GPS_003.jpg" alt="">
-                            </div>
-                            <div class="project-one__content">
-                                <p class="project-one__tagline">Antenna</p>
-                                <h2 class="project-one__title"><a href="project-details.html">GPS+GSM Antenna</a></h2>
-                                <div class="project-one__arrow">
-                                    <a href="project-details.html"><span class="icon-right-arrow"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     <!--             news 4--6             -->
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="400ms">
-                        <!--Project One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="image/product/GPS_004.jpg" alt="">
-                            </div>
-                            <div class="project-one__content">
-                                <p class="project-one__tagline">Antenna</p>
-                                <h2 class="project-one__title"><a href="project-details.html">GPS+BD Antenna</a></h2>
-                                <div class="project-one__arrow">
-                                    <a href="project-details.html"><span class="icon-right-arrow"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="500ms">
-                        <!--Project One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="image/product/GPS_001.jpg" alt="">
-                            </div>
-                            <div class="project-one__content">
-                                <p class="project-one__tagline">Antenna</p>
-                                <h2 class="project-one__title"><a href="project-details.html">GPS+GLONASS Antenna</a></h2>
-                                <div class="project-one__arrow">
-                                    <a href="project-details.html"><span class="icon-right-arrow"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="600ms">
-                        <!--Project One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="image/product/GPS_002.jpg" alt="">
-                            </div>
-                            <div class="project-one__content">
-                                <p class="project-one__tagline">Antenna</p>
-                                <h2 class="project-one__title"><a href="project-details.html">GPS+4G Antenna</a></h2>
-                                <div class="project-one__arrow">
-                                    <a href="project-details.html"><span class="icon-right-arrow"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     <!--             news 7--9             -->
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="600ms">
-                        <!--Project One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="image/product/GPS_003.jpg" alt="">
-                            </div>
-                            <div class="project-one__content">
-                                <p class="project-one__tagline">Antenna</p>
-                                <h2 class="project-one__title"><a href="project-details.html">WIFI Antenna</a></h2>
-                                <div class="project-one__arrow">
-                                    <a href="project-details.html"><span class="icon-right-arrow"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="600ms">
-                        <!--Project One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="image/product/GPS_004.jpg" alt="">
-                            </div>
-                            <div class="project-one__content">
-                                <p class="project-one__tagline">Antenna</p>
-                                <h2 class="project-one__title"><a href="project-details.html">3G, 4G Antennas</a></h2>
-                                <div class="project-one__arrow">
-                                    <a href="project-details.html"><span class="icon-right-arrow"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="600ms">
-                        <!--Project One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="image/product/GPS_004.jpg" alt="">
-                            </div>
-                            <div class="project-one__content">
-                                <p class="project-one__tagline">Cable</p>
-                                <h2 class="project-one__title"><a href="project-details.html">Pigtail Cable</a></h2>
-                                <div class="project-one__arrow">
-                                    <a href="project-details.html"><span class="icon-right-arrow"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    </form>
+                    <p><strong>This space is reserved for the project team and members of supported projects.</strong></p>
+                  </div>
+                </section>
+            </div>
             </div>
         </section>
-        <!--Projects Page End-->
+        <!--Contact Page End-->
+
+
+
+
 
         <!--Site Footer One Start-->
         <footer class="site-footer">
@@ -322,7 +239,7 @@
                             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                                 <div class="footer-widget__column footer-widget__about">
                                     <div class="footer-widget__about-logo">
-                                        <a href=""><img src="image/logo/logo-white.svg" alt=""></a>
+                                        <a href=""><img src="../image/logo/logo-white.svg" alt=""></a>
                                     </div>
                                     <p class="footer-widget__about-text">Alice Zhang <br>Shenzhen Avic Communications Equipment Co., Ltd. </p>
                                     <div class="footer-widget__about-social">
@@ -337,18 +254,18 @@
                                 <div class="footer-widget__column footer-widget__links clearfix">
                                     <h3 class="footer-widget__title">Links</h3>
                                     <ul class="footer-widget__links-list list-unstyled clearfix">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="product.html">Product</a></li>
+                                        <li><a href="../index.html">Home</a></li>
+                                        <li><a href="../about.html">About</a></li>
+                                        <li><a href="../product.html">Product</a></li>
                                     </ul>
                                     <ul class="footer-widget__links-list list-unstyled clearfix">
-                                        <li><a href="news.html">News</a></li>
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="../news.html">News</a></li>
+                                        <li><a href="../services.html">Services</a></li>
+                                        <li><a href="../contact.html">Contact</a></li>
                                     </ul>
                                     <ul class="footer-widget__links-list footer-widget__links-list-two list-unstyled clearfix">
-                                        <li><a href="managed-it.html">Managed IT</a></li>
-                                        <li><a href="it-support.html">IT Support</a></li>
+                                        <li><a href="../managed-it.html">Managed IT</a></li>
+                                        <li><a href="../it-support.html">IT Support</a></li>
             
                                     </ul>
                                 </div>
@@ -406,9 +323,9 @@
                                     </div>
                                     <div class="site-footer__bottom-right">
                                         <ul class="list-unstyled site-footer__bottom-menu">
-                                            <li><a href="contact.html">Terms & Condition</a></li>
+                                            <li><a href="../contact.html">Terms & Condition</a></li>
                                             <li><span>/</span></li>
-                                            <li><a href="contact.html">Privacy Policy</a></li>
+                                            <li><a href="../contact.html">Privacy Policy</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -422,7 +339,7 @@
 
 
     </div>
-
+    
     <!-- /.page-wrapper -->
     <div class="mobile-nav__wrapper">
         <div class="mobile-nav__overlay mobile-nav__toggler"></div>
@@ -479,37 +396,55 @@
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
 
-    <script src="static/js/jquery-3.6.0.min.js"></script>
-    <script src="static/js/bootstrap.bundle.min.js"></script>
-    <script src="static/js/jarallax.min.js"></script>
-    <script src="static/js/jquery.ajaxchimp.min.js"></script>
-    <script src="static/js/jquery.appear.min.js"></script>
-    <script src="static/js/jquery.circle-progress.min.js"></script>
-    <script src="static/js/jquery.magnific-popup.min.js"></script>
-    <script src="static/js/jquery.validate.min.js"></script>
-    <script src="static/js/nouislider.min.js"></script>
-    <script src="static/js/odometer.min.js"></script>
-    <script src="static/js/swiper.min.js"></script>
-    <script src="static/js/tiny-slider.min.js"></script>
-    <script src="static/js/wNumb.min.js"></script>
-    <script src="static/js/wow.js"></script>
-    <script src="static/js/isotope.js"></script>
-    <script src="static/js/countdown.min.js"></script>
-    <script src="static/js/owl.carousel.min.js"></script>
-    <script src="static/js/twentytwenty.js"></script>
-    <script src="static/js/jquery.event.move.js"></script>
-    <script src="static/js/jquery.bxslider.min.js"></script>
-    <script src="static/js/bootstrap-select.min.js"></script>
-    <script src="static/js/vegas.min.js"></script>
-    <script src="static/js/jquery-ui.js"></script>
-    <script src="static/js/timePicker.js"></script>
+    <script src="../static/js/jquery-3.6.0.min.js"></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/jarallax.min.js"></script>
+    <script src="../static/js/jquery.ajaxchimp.min.js"></script>
+    <script src="../static/js/jquery.appear.min.js"></script>
+    <script src="../static/js/jquery.circle-progress.min.js"></script>
+    <script src="../static/js/jquery.magnific-popup.min.js"></script>
+    <script src="../static/js/jquery.validate.min.js"></script>
+    <script src="../static/js/nouislider.min.js"></script>
+    <script src="../static/js/odometer.min.js"></script>
+    <script src="../static/js/swiper.min.js"></script>
+    <script src="../static/js/tiny-slider.min.js"></script>
+    <script src="../static/js/wNumb.min.js"></script>
+    <script src="../static/js/wow.js"></script>
+    <script src="../static/js/isotope.js"></script>
+    <script src="../static/js/countdown.min.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/twentytwenty.js"></script>
+    <script src="../static/js/jquery.event.move.js"></script>
+    <script src="../static/js/jquery.bxslider.min.js"></script>
+    <script src="../static/js/bootstrap-select.min.js"></script>
+    <script src="../static/js/vegas.min.js"></script>
+    <script src="../static/js/jquery-ui.js"></script>
+    <script src="../static/js/timePicker.js"></script>
+    <!-- Firebase - firebase.js-->
+    <script src="../static/login/jquery.scrollex.min.js"></script>
+		<script src="../assets/login/jquery.scrolly.min.js"></script>
+    <script src="../static/login/browser.min.js"></script>
+    <script src="../static/login/breakpoints.min.js"></script>
+    <script src="../static/login/main.js"></script>
+    <script src="../static/login/firebase.js"></script>
+    <script>
+      firebase.auth().onAuthStateChanged(function(user){
+          if(user){
+          window.location.href = "loggedin.html"
+          } else {
+          window.location.herf = "login.html"
+          }
+      });
+    </script>
+
+
 
 
     <script src="https://ditu.google.cn/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM"></script>
 
 
     <!-- template js -->
-    <script src="static/js/izeetak.js"></script>
+    <script src="../static/js/izeetak.js"></script>
 </body>
 
 </html>

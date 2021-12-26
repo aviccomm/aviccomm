@@ -1,0 +1,174 @@
+
+<!DOCTYPE HTML>
+<!--
+	Template free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Pi_Pirate Research Group website showing off many of the current projects. 
+	author@ Colby Sawyer (colby-sawyer.com)
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- favicon-->
+		<link rel="shortcut icon" href="../image/favicon.ico">
+		<!-- Site Title-->
+		<title>loggedin &#8211; AVICCOMM</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/css/login.css" />
+		<!-- <noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript> -->
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+                <section class="banner style2 orient-center content-align-center image-position-right fullscreen onload-image-fade-in onload-content-fade-right">	
+					<div class="content align-center" style="background-color: white; font-size: 18pt;width: calc(40% + 40rem);max-width: 1100px;">
+						<!--<div class= "align-left">
+							<p id= "user-name">Account Name: </p>
+							<p id="user-email">Account Email: </p>
+						</div> -->
+						<div class="file-header" >
+							<a href="../index.html"><i class="fab fa fa-home"></i>Home</a>
+							<h2>Welcome to the Intranet of aviccomm.net</h2>
+							<p> Please contact <b>info@aviccomm.com</b> if you have any questions.</p>
+						</div>
+						<div id="userDisplay" class="align-center">
+							<div id="user">
+								<div id = "header-div" class="align-left" style = "padding: 2px 2px 2px;">
+									<a id="logout-button" class="button small wide smooth-scroll-middle ">Logout</a>
+								</div>
+								<div id="display-div">
+									<p id="emailDisplay">Email</p>
+								</div>
+								<div id = "fields-div" class = "align-left" style="padding: 2px 2px 2px;">
+									<!--<a id="change-password-button" class="button small wide smooth-scroll-middle ">Change Password</a>
+									<a id="change-email-button" class = "button icon small fa-pen smooth-scroll-middle">Change Email</a> -->
+								</div>
+								<div id="update-div" >
+									<button id="update-profile-button" class="button small wide smooth-scroll-middle ">Update Profile</button>
+									<!--<a id="cancel-profile-update-button" class="button small wide smooth-scroll-middle">Cancel</a>-->
+								</div>
+							</div>
+							<div id = "error-div" style="max-width: 200px;" class="align-center">
+							</div>
+						</div>
+						<!---
+						<div class="actions align-center">
+							<a id="logout-button" class="button small wide smooth-scroll-middle">Logout</a>
+							
+						</div> -->
+						<div class="content align-left" style="width: 100%;text-align: left;padding-left: 2%; overflow: hidden;">
+							<div id="documents" class="align-left">
+								<h3>Document (select a folder):</h3>
+								<p> <select id="selectFolder" class="lead-1 text-black-pearl" style="width: calc(25% + 10rem);max-width: 300px;">
+									<option value ="aviccomm">aviccomm</option>
+									<option value ="docs" >docs</option>
+									<option value ="figure">figure</option>
+									<option value ="important" >important</option>
+									<option value ="meeting" >meeting</option>
+									<option value="other">other</option>
+								
+								  </select> 
+									</p>
+								<div id ="upload" class="actions align-center">
+									<div  class="page-main"></div>
+									<ul class = "actions stacked">
+										<div id = "files" class = "page-content">
+
+										</div>
+										<label id="user-file-label"><br></label>
+									</ul>
+								</div>
+
+								<p><button id= "btnStartUpload" class="button small wide smooth-scroll-middle" >Upload File</button><p>
+							  
+
+
+								<div>
+									<div>
+										<p>The download url is shown below:
+											<!-- <textarea id="textarea" style="width:90%;height:150px; text-align: left;"></textarea> -->
+											<input type="text" id="file_name" name="file_name"  style="width: 80%; text-align: left; font-size: 20px;"/>
+										<!-- <input type="button"  class="button small wide smooth-scroll-middle" value="Generate" onclick="generateDownloadLink()"/> <br> -->
+									     <!-- File URL:<br>
+										<p id="linkbox"></p> -->
+									    </p>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<div class="align-center">
+							<a id = "fun-button" href = "fun.html" class="button small wide smooth-scroll-middle disabled">Have a little fun</a>				
+							<a id = "add-user-button" href = "newUser.html" class = "button small wide smooth-scroll-middle">Add a new user</a>
+						</div>
+                    </div>
+                    <div class="image">
+                        <img src="../image/home/b12.jpg" alt="background" />
+                    </div>
+                </section>
+			</div>
+
+		<!-- Scripts -->
+		<script src="../static/login/jquery.min.js"></script>
+		<script src="../static/login/jquery.scrollex.min.js"></script>
+		<script src="../static/login/jquery.scrolly.min.js"></script>
+		<script src="../static/login/browser.min.js"></script>
+		<script src="../static/login/breakpoints.min.js"></script>
+		<script src="../static/login/util.js"></script>
+		<script src="../static/login/main.js"></script>
+		<script src="../static/login/firebase.js"></script>
+		<!-- <script src="static/js/menu.js"></script> -->
+
+		<script>
+			firebase.auth().onAuthStateChanged(function(user){
+				  if(!user){
+					 window.location.href = "login.html"
+				  } else{
+					//var userName = document.getElementById("usernameDisplay");
+					var userEmail = document.getElementById("emailDisplay");
+					//var name = user.displayName;
+					var email = user.email;
+					//userName.textContent = "Username: " + name;
+					userEmail.textContent =email;
+				  }
+			});
+		</script>
+
+
+		<script>
+			var pathFolder= "aviccomm";
+			// $("#selectFolder").change(function(){
+			// 	console.log($(this).val());
+			// 	var pathFolder=$(this).val();
+			
+			
+			// });
+
+			pathFolder="main/"+ pathFolder + "/" ;
+
+			var auth = firebase.auth();
+			var storageRef = firebase.storage().ref();
+
+
+			
+			function generateDownloadLink() {
+				var fileName = document.getElementById("file").value;
+				storageRef.child(pathFolder+ fileName).getDownloadURL().then(function (url) {
+					document.getElementById('linkbox').innerHTML = '<a href="' + url + '">' + url + '</a>';
+				}).catch(function (error) {
+					console.log(error);
+					document.getElementById('linkbox').innerHTML = error.code;
+				});
+			}
+		</script>		
+	</body>
+</html>
