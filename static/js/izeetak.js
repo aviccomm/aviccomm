@@ -423,7 +423,11 @@
 
       fixedContentPos: false,
     });
-  }
+
+}
+
+
+
 
   if ($(".img-popup").length) {
     var groups = {};

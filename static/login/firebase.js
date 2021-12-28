@@ -57,6 +57,42 @@
     })						
   });
   
+    // use enter key to login
+  $(document).keyup(function(e){
+    var key = e.which;
+    if(key==13){
+      var userEmail = document.getElementById("email").value;
+      var userPassword = document.getElementById("password").value;
+      //var human = documet.getElementById("human").value;
+    
+      if(userEmail.length < 4) {
+        alert('Please enter an email address.');
+        return;
+      }
+      if(userPassword.length < 4) {
+        alert('Please enter a password.');
+        return;
+      }
+      firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION).then(function() {
+        return firebase.auth().signInWithEmailAndPassword(userEmail, userPassword).catch(function(error) {
+          // Handle Errors here.
+          //window.alert(userEmail + " " + userPassword)
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          // ...
+          if (errorCode === 'auth/wrong-password') {
+            alert('Wrong password.');
+          } else {
+            alert(errorMessage);
+          }
+          console.log(error);
+        });
+      })
+     
+    }
+  });
+  
+  
   // =======================================================================
   //                     Add User Button (onClick)
   // =======================================================================
