@@ -6685,4 +6685,19 @@ canvas {
     color: var(--thm-gray);
 }
 
+/*
+Added by Liang 2021-12-28
+*/
+.product_detail{
+    padding: 0px 100px 0px;
+    text-align: center;
+    width: 100%;
+    margin-left: 0px;
+
+}
+
+.table-left{
+    text-align: left;
+    width: 100%;
+}
 
