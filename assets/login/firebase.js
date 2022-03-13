@@ -147,12 +147,12 @@
     let errorLog = document.createElement("p");
     errorLog.id= "error-log";
     errorLog.style.marginBottom = "5px";
-    errorLog.style.color = "#DC143C"
+    errorLog.style.color = "#DC143C";
   
     let btnChangePassword = document.createElement("button");
     btnChangePassword.id = "change-password-button";
     btnChangePassword.className = "button small wide smooth-scroll-middle";
-    btnChangePassword.textContent = "Change Password"
+    btnChangePassword.textContent = "Change Password";
     btnChangePassword.addEventListener("click", e => {
       var auth = firebase.auth();
       var user = firebase.auth().currentUser;
@@ -477,8 +477,9 @@ $("#selectFolder").change(function(){
   
         let btnFileDownload = document.createElement("button");
         btnFileDownload.id = "btnFileDownload";
-        btnFileDownload.className = "button small icon solid fa-download smooth-scroll-middle";
+        btnFileDownload.className = "button small icon solid fab fa fa-download smooth-scroll-middle";
         btnFileDownload.textContent = "Download";
+        btnFileDownload.style.margin_left="10px"
         btnFileDownload.addEventListener("click", e => {
           //Start Download
           console.log("Download Clicked");
@@ -527,8 +528,9 @@ $("#selectFolder").change(function(){
         });
        let btnFileDelete = document.createElement("button");
         btnFileDelete.id = "btnFileDelete";
-        btnFileDelete.className = "button small icon solid fa-trash smooth-scroll-middle";
+        btnFileDelete.className = "button small icon solid smooth-scroll-middle";
         btnFileDelete.textContent = "Delete";
+        btnFileDelete.style.width = "105px"
         btnFileDelete.addEventListener("click", e => {
           //Start Delete
           itemRef.delete().then(function() {

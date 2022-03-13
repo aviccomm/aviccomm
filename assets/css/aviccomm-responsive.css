@@ -1287,14 +1287,12 @@
     .main-menu-two .mobile-nav__toggler:hover {
         color: var(--thm-black);
     }
-
-
-
-
-
-
-
-
-
-
 }
+
+
+/*added by Liang 2022-03-11*/
+/* @media (max-width: 1199px){
+    .main-menu-wrapper__right{
+        display: none;
+    }
+  } */

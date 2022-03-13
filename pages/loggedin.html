@@ -11,33 +11,38 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- favicon-->
-		<link rel="shortcut icon" href="../image/favicon.ico">
+		<link rel="shortcut icon" href="../images/favicon.ico">
 		<!-- Site Title-->
-		<title>loggedin &#8211; AVICCOMM</title>
+		<title>loggedin || AVICCOMM</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../static/css/login.css" />
-		<!-- <noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript> -->
+		
+		<!-- template styles -->
+		<link rel="stylesheet" href="../assets/css/aviccomm.css">
+		<link rel="stylesheet" href="../assets/css/aviccomm-responsive.css">
+		<link rel="stylesheet" href="../assets/css/all.min.css">
+		<link rel="stylesheet" href="../assets/css/login.css" />
+		<!-- <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript> -->
 		<!-- The core Firebase JS SDK is always required and must be listed first -->
-		<script src="../static//login/firebase-app.js"></script>
-		<script src="../static//login/firebase-auth.js"></script>
-		<script src="../static//login/firebase-analytics.js"></script>
-		<script src="../static//login/firebase-storage.js"></script>
+		<script src="../assets//login/firebase-app.js"></script>
+		<script src="../assets//login/firebase-auth.js"></script>
+		<script src="../assets//login/firebase-analytics.js"></script>
+		<script src="../assets//login/firebase-storage.js"></script>
 
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
                 <section class="banner style2 orient-center content-align-center image-position-right fullscreen onload-image-fade-in onload-content-fade-right">	
-					<div class="content align-center" style="background-color: white; font-size: 18pt;width: calc(40% + 40rem);max-width: 1100px;">
+					<div class="content align-center">
 						<!--<div class= "align-left">
 							<p id= "user-name">Account Name: </p>
 							<p id="user-email">Account Email: </p>
 						</div> -->
-						<div class="file-header" >
+						<div class="fields stacked" >
 							<a href="https://aviccomm.net/"><i class="fab fa fa-home"></i>Home</a>
-							<h2>Welcome to the Intranet of aviccomm.net</h2>
-							<p> Please contact <b>info@aviccomm.com</b> if you have any questions.</p>
+							<h3>Welcome to the Intranet of AVICCOMM</h3>
+							<p> Please contact <a href="mailto:info@aviccomm.com">info@aviccomm.com</a> for any questions.</p>
 						</div>
 						<div id="userDisplay" class="align-center">
 							<div id="user">
@@ -64,69 +69,69 @@
 							<a id="logout-button" class="button small wide smooth-scroll-middle">Logout</a>
 							
 						</div> -->
-						<div class="content align-left" style="width: 100%;text-align: left;padding-left: 2%; overflow: hidden;">
-							<div id="documents" class="align-left">
-								<h3>Document (select a folder):</h3>
-								<p> <select id="selectFolder" class="lead-1 text-black-pearl" style="width: calc(25% + 10rem);max-width: 300px;">
-									<option value ="aviccomm">aviccomm</option>
-									<option value ="docs" >docs</option>
-									<option value ="figure">figure</option>
-									<option value ="important" >important</option>
-									<option value ="meeting" >meeting</option>
-									<option value="other">other</option>
-								
-								  </select> 
-									</p>
-								<div id ="upload" class="actions align-center">
-									<div  class="page-main"></div>
-									<ul class = "actions stacked">
-										<div id = "files" class = "page-content">
+		
+						<div id="documents" class="align-left document">
+							<p><span class="title-select">Document (select a folder):</span>
+								<select id="selectFolder" class="lead-select">
+								<option value ="aviccomm">aviccomm</option>
+								<option value ="docs" >docs</option>
+								<option value ="figure">figure</option>
+								<option value ="important" >important</option>
+								<option value ="meeting" >meeting</option>
+								<option value="other">other</option>
+							
+								</select> 
+								</p>
+							<div id ="upload" class="actions align-center">
+								<div  class="page-main"></div>
+								<ul class = "actions stacked">
+									<div id = "files" class = "page-content">
 
-										</div>
-										<label id="user-file-label"><br></label>
-									</ul>
-								</div>
-
-								<p><button id= "btnStartUpload" class="button small wide smooth-scroll-middle" >Upload File</button><p>
-							  
-
-
-								<div>
-									<div>
-										<p>The download url is shown below:
-											<!-- <textarea id="textarea" style="width:90%;height:150px; text-align: left;"></textarea> -->
-											<input type="text" id="file_name" name="file_name"  style="width: 80%; text-align: left; font-size: 20px;"/>
-										<!-- <input type="button"  class="button small wide smooth-scroll-middle" value="Generate" onclick="generateDownloadLink()"/> <br> -->
-									     <!-- File URL:<br>
-										<p id="linkbox"></p> -->
-									    </p>
 									</div>
-								</div>
+									<label id="user-file-label"><br></label>
+								</ul>
+							</div>
 
+							<p><button id= "btnStartUpload" class="button small wide fab fa fa-upload smooth-scroll-middle" >Upload File</button><p>
+							
+
+
+							<div>
+								<div>
+									<p>The download url is shown below:
+										<!-- <textarea id="textarea" style="width:90%;height:150px; text-align: left;"></textarea> -->
+										<input type="text" id="file_name" name="file_name"  style="width: 80%; text-align: left; font-size: 20px;"/>
+									<!-- <input type="button"  class="button small wide smooth-scroll-middle" value="Generate" onclick="generateDownloadLink()"/> <br> -->
+										<!-- File URL:<br>
+									<p id="linkbox"></p> -->
+									</p>
+								</div>
 							</div>
 
 						</div>
+
+					
 						<div class="align-center">
 							<a id = "fun-button" href = "fun.html" class="button small wide smooth-scroll-middle disabled">Have a little fun</a>				
 							<a id = "add-user-button" href = "newUser.html" class = "button small wide smooth-scroll-middle">Add a new user</a>
 						</div>
                     </div>
                     <div class="image">
-                        <img src="../image/home/b12.jpg" alt="background" />
+                        <img src="../images/home/b12.jpg" alt="background" />
                     </div>
                 </section>
 			</div>
 
 		<!-- Scripts -->
-		<script src="../static/login/jquery.min.js"></script>
-		<script src="../static/login/jquery.scrollex.min.js"></script>
-		<script src="../static/login/jquery.scrolly.min.js"></script>
-		<script src="../static/login/browser.min.js"></script>
-		<script src="../static/login/breakpoints.min.js"></script>
-		<script src="../static/login/util.js"></script>
-		<script src="../static/login/main.js"></script>
-		<script src="../static/login/firebase.js"></script>
-		<!-- <script src="static/js/menu.js"></script> -->
+		<script src="../assets/login/jquery.min.js"></script>
+		<script src="../assets/login/jquery.scrollex.min.js"></script>
+		<script src="../assets/login/jquery.scrolly.min.js"></script>
+		<script src="../assets/login/browser.min.js"></script>
+		<script src="../assets/login/breakpoints.min.js"></script>
+		<script src="../assets/login/util.js"></script>
+		<script src="../assets/login/main.js"></script>
+		<script src="../assets/login/firebase.js"></script>
+		<!-- <script src="assets/js/menu.js"></script> -->
 
 		<script>
 			firebase.auth().onAuthStateChanged(function(user){
