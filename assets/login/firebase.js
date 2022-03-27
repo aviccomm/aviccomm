@@ -479,7 +479,7 @@ $("#selectFolder").change(function(){
         btnFileDownload.id = "btnFileDownload";
         btnFileDownload.className = "button small icon solid fab fa fa-download smooth-scroll-middle";
         btnFileDownload.textContent = "Download";
-        btnFileDownload.style.margin_left="10px"
+	    btnFileDownload.style.marginLeft="10pt";
         btnFileDownload.addEventListener("click", e => {
           //Start Download
           console.log("Download Clicked");
