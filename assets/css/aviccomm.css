@@ -6891,3 +6891,40 @@ Added by Liang 2021-12-28
     color: #00C957;          
     text-decoration:none;
 }
+
+
+
+
+
+
+/*  css for the clock page 2022-03-27     */
+.clock-siemens{
+    text-align: center;
+}
+.clock-siemens a{
+    text-decoration:none;
+}
+.clock-siemens h3{
+    text-align: center;
+    font-size: 28px;
+    margin: 0;
+    line-height: 27px;
+    transition: all 500ms ease;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+.clock-siemens2{
+    text-align: center;
+}
+.clock-siemens2 h3{
+    text-align: center;
+    font-size: 20pt;
+    color: darkgreen;
+}
+    @media screen and (max-width: 1280px) {
+        .clock-siemens span{
+            font-size: 18pt;
+        }
+    }
+  
