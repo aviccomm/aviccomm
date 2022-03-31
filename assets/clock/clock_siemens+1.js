@@ -332,6 +332,85 @@
     innerRim.appendChild(glass);
     }
 
+    /* Date window */
+    var digitColour = 'rgb(255,255,255)';
+    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    var n = new Date();
+    ddy = days[dt.getDay()];
+    ddt = dt.getDate();
+    // console.log( "n value: ", n.getDate(),n.toLocaleString());
+
+    //calculate how many days for this month
+    function getDuration (aa) {    
+         let dtt = new Date()    
+         var month = dtt.getMonth()    
+         dtt.setMonth(dtt.getMonth()+aa + 1)   
+         dtt.setDate(0)
+         return dtt.getDate()  
+    }
+    var total_days;
+    var hincr0;
+    total_days=getDuration(0)
+    if (hincr>24) { 
+        hincr0=hincr-24; 
+        ddt=ddt+1;
+        total_days=getDuration(0);
+        if(ddt>total_days){ ddt=1; }
+    }else if (hincr<0) { 
+        hincr0=hincr+24;
+        ddt=ddt-1;
+        total_days=getDuration(-1);
+        if(ddt==0){ ddt=total_days; }
+    }else{ 
+        hincr0=hincr; 
+    }
+    var ampm = hincr0 >= 12 ? 'PM' : 'AM';
+    ddy=ampm;   // set AM or PM to ddy
+    // console.log( "current variable: ", ddy, ddt, hincr, hincr0,ampm);
+
+
+    var cntnr = d.createElement('div');
+    cntnr.setAttribute('style', 'display: block;'
+        +'position: absolute;'
+        +'height: '+xy(8)+'px;'
+        +'width: '+xy(17)+'px;'
+        +'margin: auto; top: 0; bottom: 0;' 
+        +'left: '+xy(65)+'px;'
+        +'border:'+xy(0.1)+'px solid '+digitColour+';'
+        +'background:#fff;'
+        +'font: '+xy(4.5)+'px tahoma,sans-serif;'
+        +'color: #444;'
+        +'line-height: '+xy(6)+'px;'
+        +'box-shadow: inset '+xy(.7)+'px '+xy(.7)+'px '+xy(.7)+'px 0 rgba(0,0,0,0.8);'
+        +'padding:0;');
+    dial.appendChild(cntnr);
+
+    var day = d.createElement('div');
+    day.setAttribute('style', 'display: block;'
+        +'position: absolute;'
+        +'height: '+xy(5.5)+'px;'
+        +'width: '+xy(8.1)+'px;'
+        +'top: '+xy(1)+'px;'
+        +'left: '+xy(1)+'px;'
+        +'border-right: .2px solid #555;'
+        +'padding:0;');
+    cntnr.appendChild(day);
+    day.appendChild(d.createTextNode(ddy));
+
+    var date = d.createElement('div');
+    date.setAttribute('style', 'display: block;'
+        +'position: absolute;'
+        +'height: '+xy(5.5)+'px;'
+        +'width: '+xy(5)+'px;'
+        +'top: '+xy(1)+'px;'
+        +'left: '+xy(9.5)+'px;'
+        +'padding:0;');
+    cntnr.appendChild(date);
+    date.appendChild(d.createTextNode(ddt));
+
+
+
+
     function SiemensIndustrialClock() {
         var minutes = new Date().getMinutes();
         if (minutes !== prevmin) {
