@@ -251,6 +251,14 @@ canvas {
     margin: 0;
     font-weight: 650;
     color: var(--thm-black);
+    font-size: 32px;
+    line-height: 40px;
+    padding: 0px 20px 0px;
+}
+.section-title__title4 {
+    margin: 0;
+    font-weight: 650;
+    color: var(--thm-black);
     font-size: 28px;
     line-height: 40px;
     padding: 0px 20px 0px;
@@ -3017,7 +3025,7 @@ canvas {
     padding-bottom: 120px;
 }
 .news-page-home {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .news-one__single {
@@ -4328,7 +4336,7 @@ canvas {
     position: relative;
     display: block;
     padding: 0 0 50px;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
     
 }
 
@@ -4404,6 +4412,38 @@ canvas {
 .project-two__carousel.owl-carousel .owl-dots .owl-dot span {
     display: none;
 }
+/* .project-two .nav-pro button{
+    color: var(--thm-black);
+}
+.project-two .nav-pro button:hover{
+    color: green;
+}
+.project-two .nav-pro button:active{
+    background: red;
+}
+.project-two .nav-pro button:after{
+    background: blue;
+} */
+.project-two .tab-content {
+    padding: 10px 10px 60px;
+}
+.project-two .tab-content h4{
+    color:black;
+    font-size: 22pt;
+    font-weight: 750;
+    padding: 12px 5px 10px 50px;
+}
+.project-two .tab-content li{
+    color:#292421;
+    font-size: 18pt;
+    padding-right: 6px;
+    line-height: 1.8em;
+    font-weight: 500;
+    text-align: justify;
+    
+}
+
+
 
 /*--------------------------------------------------------------
 # Brand One
@@ -6879,23 +6919,130 @@ Added by Liang 2021-12-28
     text-decoration:none;
 }
 .lead-design li{
-  padding: 8px 2px 8px 2px;
-}
-.lead-design li:hover{
+    padding: 5px 2px 5px 2px;  line-height: 2em;
+  }
+  .lead-design li:hover{
+    font-weight: 550;
+    color: #F5A400;             
+      text-decoration:none;
+  }
+  .lead-design2 li:hover{
+    font-weight: 550;
+    color: #F5A400;             
+      text-decoration:none;
+  }
+  
+  
+  
+  .lead-lime li{
+    padding: 5px 2px 5px 2px;  line-height: 1.8em;
+  }
+  .lead-lime li a{
+    color:	green; 
+  }
+  .lead-lime li:hover,.lead-lime li a:hover{
+    font-weight: 600;
+    color:	#00FF00;    
+      text-decoration:none;
+  }
+  .lead-lime li a:hover{
+    background: whitesmoke;
+  }
+  
+  .lead-lime2 li:hover{
+    font-weight: 500;
+    color:	#00FF00;            
+      text-decoration:none;
+  }
+  
+  .lead-none li{
+    padding: 5px 2px 5px 2px;  line-height: 2em;
+    color: #F4A460;;
+  }
+  .lead-none  li a{
+    color: #F4A460; 
+  }
+  .lead-none li:hover,.lead-none li a:hover{
+      color: #228B22;
+      text-decoration:none;
+  }
+  .lead-none li a:active{
+    color:#FFDA00;
+    background:#F5F5F5;                     /* HTML WhiteSmoke */
+  }
+  .lead-none2 li:hover{
     font-weight: 500;
     color: #F5A400;             
-    text-decoration:none;
-}
-.lead-none li:hover{
-    font-weight: 500;
-    color: #F5A400;             
-    text-decoration:none;
-}
-.lead-green li:hover{
-    font-weight: 500;
-    color: #00C957;          
-    text-decoration:none;
-}
+      text-decoration:none;
+  }
+  .lead-teal li{
+    padding: 5px 2px 5px 2px;  line-height: 2em;
+  }
+  .lead-teal  li a{
+    color:	#008080;  
+  }
+  .lead-teal li:hover,.lead-teal li a:hover{
+    font-weight: 600;
+    color: blue;           
+      text-decoration:none;
+  }
+  .lead-teal li a:hover{
+    background: whitesmoke;
+  }
+  
+  .lead-green li{
+    padding: 5px 2px 5px 2px;  line-height: 2em;
+  }
+  .lead-green li a{
+    color: 		green;  
+  }
+  .lead-green li:hover,.lead-green li a:hover{
+    font-weight: 600;
+    color: #308014;
+      text-decoration:none;
+    background:none;
+  }
+  .lead-green li a:hover{
+    background: whitesmoke;
+  }
+  .lead-green1 li a{
+    color: 		green;  
+  }
+  .lead-green1 li:hover,.lead-green li a:hover{
+    font-weight: 600;
+    color: 	green;          
+      text-decoration:none;
+    background: none;
+  }
+  
+  /*  drakgreen a  and hover 2022-03-10*/
+  .lead-darkgreen li{
+    padding: 5px 2px 5px 2px;  line-height: 2em;
+  }
+  .lead-darkgreen li a{
+    color: 		#006400;  
+  }
+  .lead-darkgreen li:hover,.lead-darkgreen li a:hover{
+    font-weight: 600;
+    color: blue;          
+      text-decoration:none;
+  }
+  .lead-darkgreen li a:hover{
+    background: whitesmoke;
+  }
+  
+  .lead-blue{
+    color: blue;
+  }
+  .lead-lime{
+    color: #00FF00;
+  }
+  .lead-green{
+    color:green;  
+  }
+  .lead-darkgreen{
+    color:#006400;  
+  }
 
 
 
