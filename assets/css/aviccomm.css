@@ -2082,6 +2082,7 @@ canvas {
 
 .about-one__right .section-title {
     margin-bottom: 28px;
+    padding-top: 20px;
 }
 
 .about-one__text {
@@ -3015,6 +3016,9 @@ canvas {
 .news-page {
     padding-bottom: 120px;
 }
+.news-page-home {
+    padding-bottom: 20px;
+}
 
 .news-one__single {
     position: relative;
@@ -3626,7 +3630,7 @@ canvas {
     position: relative;
     display: block;
     background-color: #eef3f7;
-    padding: 0 0 120px;
+    padding: 0 0 60px;
     margin-bottom: 60px;
     z-index: 1;
 }
@@ -4323,8 +4327,8 @@ canvas {
 .project-two {
     position: relative;
     display: block;
-    padding: 0 0 100px;
-    margin-bottom: 70px;
+    padding: 0 0 50px;
+    margin-bottom: 20px;
     
 }
 
@@ -6677,6 +6681,7 @@ canvas {
 
 .about-two__right .section-title {
     margin-bottom: 28px;
+    padding-top: 20px;
 }
 
 .about-two__text-1 {
