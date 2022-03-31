@@ -338,7 +338,6 @@
     var n = new Date();
     ddy = days[dt.getDay()];
     ddt = dt.getDate();
-    // console.log( "n value: ", n.getDate(),n.toLocaleString());
 
     //calculate how many days for this month
     function getDuration (aa) {    
@@ -351,12 +350,12 @@
     var total_days;
     var hincr0;
     total_days=getDuration(0)
-    if (hincr>24) { 
+    if (hincr>=24) { 
         hincr0=hincr-24; 
         ddt=ddt+1;
         total_days=getDuration(0);
         if(ddt>total_days){ ddt=1; }
-    }else if (hincr<0) { 
+    }else if (hincr<=0) { 
         hincr0=hincr+24;
         ddt=ddt-1;
         total_days=getDuration(-1);

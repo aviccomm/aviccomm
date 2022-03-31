@@ -46,7 +46,7 @@
     var dt = new Date;
     dt.setMinutes( dt.getMinutes() + dt.getTimezoneOffset() ); // 当前时间(分钟) + 时区偏移(分钟)
     
-    var dt_hour = 3;
+    var dt_hour = +3;
     var dt_min  = 0;
     
     function iniTime() { 
@@ -342,7 +342,10 @@
     var n = new Date();
     ddy = days[dt.getDay()];
     ddt = dt.getDate();
+    // console.log( "dt value: ", dt.getDate(),dt.toLocaleString());
     // console.log( "n value: ", n.getDate(),n.toLocaleString());
+    // console.log( "current variable00: ", ddy, ddt, hincr, mincr);
+
 
     //calculate how many days for this month
     function getDuration (aa) {    
@@ -355,7 +358,7 @@
     var total_days;
     var hincr0;
     total_days=getDuration(0)
-    if (hincr>24) { 
+    if (hincr>=24) { 
         hincr0=hincr-24; 
         ddt=ddt+1;
         total_days=getDuration(0);
@@ -411,7 +414,6 @@
         +'padding:0;');
     cntnr.appendChild(date);
     date.appendChild(d.createTextNode(ddt));
-
 
 
     function SiemensIndustrialClock() {

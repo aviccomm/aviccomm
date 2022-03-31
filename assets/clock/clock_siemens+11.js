@@ -40,6 +40,7 @@
     var dgts = [];
     var nums = ['1','2','3','4','5','6','7','8','9','10','11','12'];
 
+
     var dt = new Date;
     // console.log( dt.getTimezoneOffset() ); // -480
     var dt = new Date;
@@ -53,12 +54,6 @@
         mincr = dt.getMinutes() + dt_min;
         hincr = dt.getHours() + dt_hour;
     }
-
-    // function iniTime() {
-    //     var now = new Date();
-    //     mincr = now.getMinutes();
-    //     hincr = now.getHours();
-    // }
     iniTime();
     mincr--;
 
@@ -344,7 +339,6 @@
     var n = new Date();
     ddy = days[dt.getDay()];
     ddt = dt.getDate();
-    // console.log( "n value: ", n.getDate(),n.toLocaleString());
 
     //calculate how many days for this month
     function getDuration (aa) {    
@@ -357,7 +351,7 @@
     var total_days;
     var hincr0;
     total_days=getDuration(0)
-    if (hincr>24) { 
+    if (hincr>=24) { 
         hincr0=hincr-24; 
         ddt=ddt+1;
         total_days=getDuration(0);
@@ -413,8 +407,6 @@
         +'padding:0;');
     cntnr.appendChild(date);
     date.appendChild(d.createTextNode(ddt));
-
-    
 
 
     function SiemensIndustrialClock() {

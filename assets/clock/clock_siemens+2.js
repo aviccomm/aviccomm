@@ -40,27 +40,26 @@
     var dgts = [];
     var nums = ['1','2','3','4','5','6','7','8','9','10','11','12'];
 
+
     var dt = new Date;
-    // console.log( dt.getTimezoneOffset() ); // -480
+    console.log( dt.getTimezoneOffset() ); // -480
     var dt = new Date;
     dt.setMinutes( dt.getMinutes() + dt.getTimezoneOffset() ); // 当前时间(分钟) + 时区偏移(分钟)
     
-    var dt_hour = 2;
+    var dt_hour = +2;
     var dt_min  = 0;
     
     function iniTime() { 
         var now = new Date();
         mincr = dt.getMinutes() + dt_min;
         hincr = dt.getHours() + dt_hour;
-    }
+        // console.log( "now时间格式显示: ", now.toLocaleString());
+        // console.log( "now: ", now);
 
-    // function iniTime() {
-    //     var now = new Date();
-    //     mincr = now.getMinutes();
-    //     hincr = now.getHours();
-    // }
+    }
     iniTime();
     mincr--;
+    // console.log( "current time: ",hincr, mincr);
 
     function xy (v) {
         return (v * clockSize / 100);
@@ -337,14 +336,16 @@
     innerRim.appendChild(glass);
     }
 
-
     /* Date window */
     var digitColour = 'rgb(255,255,255)';
     var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     var n = new Date();
     ddy = days[dt.getDay()];
     ddt = dt.getDate();
+    // console.log( "dt value: ", dt.getDate(),dt.toLocaleString());
     // console.log( "n value: ", n.getDate(),n.toLocaleString());
+    // console.log( "current variable00: ", ddy, ddt, hincr, mincr);
+
 
     //calculate how many days for this month
     function getDuration (aa) {    
@@ -357,7 +358,7 @@
     var total_days;
     var hincr0;
     total_days=getDuration(0)
-    if (hincr>24) { 
+    if (hincr>=24) { 
         hincr0=hincr-24; 
         ddt=ddt+1;
         total_days=getDuration(0);
@@ -413,8 +414,6 @@
         +'padding:0;');
     cntnr.appendChild(date);
     date.appendChild(d.createTextNode(ddt));
-
-    
 
 
     function SiemensIndustrialClock() {
