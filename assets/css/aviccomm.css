@@ -540,14 +540,19 @@ canvas {
     float: left;
     padding-top: 33px;
     padding-bottom: 32px;
-    margin-right: 165px;
+    margin-right: 155px;
 }
-
 .main-menu-wrapper__main-menu {
     position: relative;
     display: block;
     float: left;
 }
+@media only screen and (min-width: 1500px) and (max-width: 1599.98px) {
+    .main-menu-wrapper__main-menu{ 
+        margin-left: -20px;
+    }
+}
+
 
 .main-menu-wrapper__right {
     position: relative;
@@ -682,7 +687,7 @@ canvas {
 
 .main-menu .main-menu__list>li>a,
 .stricky-header .main-menu__list>li>a {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 550;
     display: flex;
     align-items: center;
