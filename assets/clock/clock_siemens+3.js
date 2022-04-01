@@ -336,45 +336,50 @@
     innerRim.appendChild(glass);
     }
 
+    
+
     /* Date window */
     var digitColour = 'rgb(255,255,255)';
     var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     var n = new Date();
+    var month_now=dt.getMonth()+1;
     ddy = days[dt.getDay()];
     ddt = dt.getDate();
-    // console.log( "dt value: ", dt.getDate(),dt.toLocaleString());
-    // console.log( "n value: ", n.getDate(),n.toLocaleString());
-    // console.log( "current variable00: ", ddy, ddt, hincr, mincr);
-
-
+    
     //calculate how many days for this month
-    function getDuration (aa) {    
-         let dtt = new Date()    
-         var month = dtt.getMonth()    
-         dtt.setMonth(dtt.getMonth()+aa + 1)   
-         dtt.setDate(0)
-         return dtt.getDate()  
+    function getDuration (dtt, y, m) {    
+         var year  = dtt.getFullYear() + y;
+         var month = dtt.getMonth() + 1 + m;
+         var day   = new Date(year, month, 0);
+        //  console.log("get year, month and days: ", year, month, day.getDate());
+         return day.getDate() 
     }
     var total_days;
     var hincr0;
-    total_days=getDuration(0)
+    // total_days=getDuration(dt, 1)
     if (hincr>=24) { 
         hincr0=hincr-24; 
         ddt=ddt+1;
-        total_days=getDuration(0);
+        total_days=getDuration(dt, 0);
         if(ddt>total_days){ ddt=1; }
     }else if (hincr<0) { 
         hincr0=hincr+24;
-        ddt=ddt-1;
-        total_days=getDuration(-1);
-        if(ddt==0){ ddt=total_days; }
+         if(ddt==1){
+             if(month_now==1){
+                total_days = getDuration(dt,-1,-1);
+             }else{
+                total_days = getDuration(dt,0,-1);
+             }
+             ddt=total_days;
+         }else{
+            ddt=ddt-1; 
+         }
     }else{ 
         hincr0=hincr; 
     }
     var ampm = hincr0 >= 12 ? 'PM' : 'AM';
     ddy=ampm;   // set AM or PM to ddy
     // console.log( "current variable: ", ddy, ddt, hincr, hincr0,ampm);
-
 
     var cntnr = d.createElement('div');
     cntnr.setAttribute('style', 'display: block;'
@@ -414,6 +419,9 @@
         +'padding:0;');
     cntnr.appendChild(date);
     date.appendChild(d.createTextNode(ddt));
+
+
+
 
 
     function SiemensIndustrialClock() {
