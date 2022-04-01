@@ -6803,6 +6803,22 @@ canvas {
     padding: 60px 0 20px;
 }
 
+/*--------------------------------------------------------------
+# About Three
+--------------------------------------------------------------*/
+.about-three {
+    position: relative;
+    display: block;
+    padding: 30px 0px 30px;
+}
+
+.about-three2 {
+    position: relative;
+    display: block;
+    padding: 0 0 120px;
+    margin-bottom: 20px;
+    background:#FFFAF0;
+}
 
 /*Services Two*/
 .services-two {
@@ -7074,9 +7090,30 @@ Added by Liang 2021-12-28
     font-size: 20pt;
     color: darkgreen;
 }
-    @media screen and (max-width: 1280px) {
-        .clock-siemens span{
-            font-size: 18pt;
-        }
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+    .clock-siemens span{ 
+        font-size: 18pt;color: darkblue;
     }
-  
+}
+@media screen and (max-width: 767.98px) {
+    .clock-siemens span{ 
+        font-size: 20pt;color: darkblue;
+    }
+}
+/*  Product Page  2022-04-01    */
+
+.nav-tabs .nav-link{
+    font-weight: 650;
+}
+/* .nav-tabs .nav-link:active{
+    color:red;
+    font-weight: 650;
+} */
+.nav-tabs .nav-link:hover{
+    color:darkgreen;
+    font-weight: 650;
+}
+/* .nav-tabs .nav-link:visited{
+    color:greenyellow;
+    font-weight: 650;
+} */

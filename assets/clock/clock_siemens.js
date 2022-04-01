@@ -1,12 +1,9 @@
 (function () {
-
     /*
     Siemens Industrial Clock
     kurt.grigg@yahoo.co.uk
     */
-
     /* ^^^^^^^^^^^^^^ Config below ^^^^^^^^^^^^^^ */
-
     var clockSize = 290;
     var caseColour = 'rgba(125,89,60,1.0)';
     var caseShadow = 'rgba(0,0,0,0.4)';
@@ -22,7 +19,6 @@
         }
 
     /* ^^^^^^^^^^^^^^^^ End config ^^^^^^^^^^^^^^ */
-
     var d = document;
     var mls = 100;
     var rnd = 'id'+Math.random() * 1;
@@ -39,19 +35,24 @@
     var offs = 60 * radi;
     var dgts = [];
     var nums = ['1','2','3','4','5','6','7','8','9','10','11','12'];
-
-    var dt = new Date;
-    // console.log( dt.getTimezoneOffset() ); // -480
+  
+    var dt  = new Date;
+    console.log( dt.getTimezoneOffset() ); // -480
     var dt = new Date;
     dt.setMinutes( dt.getMinutes() + dt.getTimezoneOffset() ); // 当前时间(分钟) + 时区偏移(分钟)
-    
+
     var dt_hour = -4;
     var dt_min  = 0;
+
     
+    // console.log( "dt 1st: ", dt.getDate(),dt.toLocaleString());
+    dt.setMinutes( dt.getMinutes() + dt_hour*60 + dt_min); // calculate local time
+    // console.log( "dt 2nd: ", dt.getDate(),dt.toLocaleString());
+
     function iniTime() { 
         var now = new Date();
-        mincr = dt.getMinutes() + dt_min;
-        hincr = dt.getHours() + dt_hour;
+        mincr = dt.getMinutes();
+        hincr = dt.getHours();
     }
 
     // function iniTime() {
@@ -349,7 +350,8 @@
 
     // console.log( "dt value: ", dt.getDate(),dt.toLocaleString());
     // console.log( "n value: ", n.getDate(),n.toLocaleString());
-    // console.log( "current variable 00: ", ddy, ddt, hincr, mincr);
+    // console.log("month_now: ", month_now);
+    // console.log( "varibles 00: ", ddy, ddt, hincr, mincr);
 
     //calculate how many days for this month
     function getDuration2 (dtt, aa) {    
@@ -366,35 +368,25 @@
          var year  = dtt.getFullYear() + y;
          var month = dtt.getMonth() + 1 + m;
          var day   = new Date(year, month, 0);
-        //  console.log("get year, month and days: ", year, month, day.getDate());
+         console.log("get year, month and days: ", year, month, day.getDate());
          return day.getDate() 
     }
     var total_days;
     var hincr0;
     // total_days=getDuration(dt, 1)
+
+   
+
     if (hincr>=24) { 
         hincr0=hincr-24; 
-        ddt=ddt+1;
-        total_days=getDuration(dt, 0);
-        if(ddt>total_days){ ddt=1; }
-    }else if (hincr<0) { 
+    } else if (hincr<0) { 
         hincr0=hincr+24;
-         if(ddt==1){
-             if(month_now==1){
-                total_days = getDuration(dt,-1,-1);
-             }else{
-                total_days = getDuration(dt,0,-1);
-             }
-             ddt=total_days;
-         }else{
-            ddt=ddt-1; 
-         }
-    }else{ 
+    }else  { 
         hincr0=hincr; 
     }
     var ampm = hincr0 >= 12 ? 'PM' : 'AM';
     ddy=ampm;   // set AM or PM to ddy
-    // console.log( "current variable: ", ddy, ddt, hincr, hincr0,ampm);
+    // console.log( "variable 11: ", ddy, ddt, hincr, hincr0,ampm);
 
     var cntnr = d.createElement('div');
     cntnr.setAttribute('style', 'display: block;'
