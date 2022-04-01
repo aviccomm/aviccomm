@@ -58,7 +58,7 @@ body.locked {
 a{color:#006400}                        /* SandyBrown  */
 a:hover {
 	color: #228B22;
-	background:#F5F5F5;                     /* HTML WhiteSmoke */
+	/*background:#F5F5F5;                      HTML WhiteSmoke */
 	text-decoration:none;
 }          
 a:active {color:#FFDA00;background:none;}  /*   808A87 */
@@ -682,8 +682,8 @@ canvas {
 
 .main-menu .main-menu__list>li>a,
 .stricky-header .main-menu__list>li>a {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 550;
     display: flex;
     align-items: center;
     color: var(--thm-gray);
@@ -4412,36 +4412,73 @@ canvas {
 .project-two__carousel.owl-carousel .owl-dots .owl-dot span {
     display: none;
 }
-/* .project-two .nav-pro button{
-    color: var(--thm-black);
+
+
+/*--------------------------------------------------------------
+# Project Two          Product Page  2022-04-01
+--------------------------------------------------------------*/
+.project-two .nav-tabs .nav-link{
+    font-weight: 650;
 }
-.project-two .nav-pro button:hover{
-    color: green;
+.project-two .nav-tabs .nav-link:hover{
+    color:darkgreen;
+    font-weight: 650;
 }
-.project-two .nav-pro button:active{
-    background: red;
+.project-two .nav-tabs .nav-link.active{
+    background-color: blue;
+    color:whitesmoke;
 }
-.project-two .nav-pro button:after{
-    background: blue;
-} */
 .project-two .tab-content {
     padding: 10px 10px 60px;
 }
-.project-two .tab-content h4{
-    color:black;
+.project-two .tab-content .tab-pane h4{
+    color:#292421;
     font-size: 22pt;
     font-weight: 750;
     padding: 12px 5px 10px 50px;
 }
-.project-two .tab-content li{
+
+.project-two .tab-content .tab-pane li{
     color:#292421;
+    line-height: 2.0em;
+    padding: 6px 10px;
     font-size: 18pt;
-    padding-right: 6px;
-    line-height: 1.8em;
     font-weight: 500;
     text-align: justify;
-    
 }
+.project-two .tab-content .tab-pane li a{
+    color:var(--thm-black);
+    text-decoration:none;
+}
+.project-two .tab-content .tab-pane li:hover{
+    color:blue;
+}
+
+
+.project-two .tab-content .tab-pane li a:hover{
+    /* color:blue; */
+    position: relative;
+    /* display: inline-block; */
+    /* font-size: 16px; */
+    background-color: blue;
+    color:whitesmoke;
+    padding: 6px 10px 6px 5px;
+}
+.project-two .tab-content .tab-pane li a::after {
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    transform: scale(0, 1);
+    transform-origin: left center;
+    background-color: currentColor;
+    transition: transform 500ms ease;
+}
+
+
+
 
 
 
@@ -7100,20 +7137,6 @@ Added by Liang 2021-12-28
         font-size: 20pt;color: darkblue;
     }
 }
-/*  Product Page  2022-04-01    */
 
-.nav-tabs .nav-link{
-    font-weight: 650;
-}
-/* .nav-tabs .nav-link:active{
-    color:red;
-    font-weight: 650;
-} */
-.nav-tabs .nav-link:hover{
-    color:darkgreen;
-    font-weight: 650;
-}
-/* .nav-tabs .nav-link:visited{
-    color:greenyellow;
-    font-weight: 650;
-} */
+
+
