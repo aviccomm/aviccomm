@@ -542,6 +542,10 @@ canvas {
     padding-bottom: 32px;
     margin-right: 155px;
 }
+.main-menu-wrapper__logo .logo{
+    width: 30px;
+}
+
 .main-menu-wrapper__main-menu {
     position: relative;
     display: block;
