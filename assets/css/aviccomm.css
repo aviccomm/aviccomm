@@ -543,7 +543,7 @@ canvas {
     margin-right: 155px;
 }
 .main-menu-wrapper__logo .logo{
-    width: 30px;
+    width: 35px;
 }
 
 .main-menu-wrapper__main-menu {
@@ -691,7 +691,7 @@ canvas {
 
 .main-menu .main-menu__list>li>a,
 .stricky-header .main-menu__list>li>a {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 550;
     display: flex;
     align-items: center;
@@ -1192,6 +1192,9 @@ canvas {
 .mobile-nav__content .logo-box {
     margin-bottom: 40px;
     display: flex;
+}
+.mobile-nav__content .logo-box .logo {
+    width: 40px;
 }
 
 .mobile-nav__close {
