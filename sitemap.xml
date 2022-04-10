@@ -9,17 +9,25 @@
 	<loc>https://aviccomm.net/product.html</loc>
 	<loc>https://aviccomm.net/resource.html </loc>	
 	<loc>https://aviccomm.net/pages/video.html </loc>
+	<loc>https://aviccomm.net/pages/cable.html </loc>
+	<loc>https://aviccomm.net/pages/clock.html </loc>
+	<loc>https://aviccomm.net/pages/GPS.html </loc>
+	<loc>https://aviccomm.net/pages/GPS+4G.html </loc>
+	<loc>https://aviccomm.net/pages/GPS+GSM.html </loc>
 	<loc>https://aviccomm.net/pages/login.html </loc>
 	<loc>https://aviccomm.net/pages/loggedin.html </loc>
+	<loc>https://aviccomm.net/pages/manage.html </loc>
 	<loc>https://aviccomm.net/pages/product-details.html </loc>
 	<loc>https://aviccomm.net/pages/news-details.html </loc>
 	<loc>https://aviccomm.net/pages/services.html </loc>
-	<loc>https://aviccomm.net/pages/manage.html </loc>
-	<loc>https://aviccomm.net/pages/clock.html </loc>
-	<loc>https://aviccomm.net/pages/GPS.html </loc>
-	<loc>https://aviccomm.net/pages/WiFi.html </loc>
-	<loc>https://aviccomm.net/pages/GPS-4G.html </loc>
+	<loc>https://aviccomm.net/pages/WiFi.html </loc>		
 	<loc>https://aviccomm.net/product/ACA100.html </loc>	
+	<loc>https://aviccomm.net/product/ACA101.html </loc>
+	<loc>https://aviccomm.net/product/ACA102.html </loc>
+	<loc>https://aviccomm.net/product/ACA103.html </loc>
+	<loc>https://aviccomm.net/product/ACA104.html </loc>
+	<loc>https://aviccomm.net/product/ACA105.html </loc>
+	<loc>https://aviccomm.net/product/ACA106.html </loc>
 	<loc>https://aviccomm.net/product/ACA200.html </loc>
 	<loc>https://aviccomm.net/product/ACA201.html </loc>
 	<loc>https://aviccomm.net/product/ACA202.html </loc>
@@ -34,6 +42,9 @@
 	<loc>https://aviccomm.net/product/ACA211.html </loc>
 	<loc>https://aviccomm.net/product/ACA212.html </loc>
 	<loc>https://aviccomm.net/product/ACA300.html </loc>
+	<loc>https://aviccomm.net/product/ACA301.html </loc>
+	<loc>https://aviccomm.net/product/ACA302.html </loc>
+	<loc>https://aviccomm.net/product/ACW101.html </loc>
     <lastmod>2022-03-30</lastmod>
   </url>
 </urlset>
