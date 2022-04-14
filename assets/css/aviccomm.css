@@ -666,6 +666,9 @@ canvas {
     align-items: center;
     display: none;
 }
+.main-menu .main-menu__list .nav-multiple{
+    width: 410px;
+}
 
 @media (min-width: 1200px) {
 
