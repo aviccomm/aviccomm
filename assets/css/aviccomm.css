@@ -1174,7 +1174,7 @@ canvas {
 }
 
 .mobile-nav__content {
-    width: 300px;
+    width: 310px;
     background-color: var(--thm-black);
     z-index: 10;
     position: relative;
