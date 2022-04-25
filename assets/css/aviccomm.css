@@ -58,7 +58,6 @@ body.locked {
 a{color:#006400}                        /* SandyBrown  */
 a:hover {
 	color: #228B22;
-	/*background:#F5F5F5;                      HTML WhiteSmoke */
 	text-decoration:none;
 }          
 a:active {color:#FFDA00;background:none;}  /*   808A87 */
@@ -1236,6 +1235,11 @@ canvas {
     height: 46px;
     align-items: center;
     transition: 500ms;
+    text-decoration: none;
+}
+.mobile-nav__content .main-menu__list li a:hover{
+    color: 	#00BFFF;
+    text-decoration:underline;
 }
 
 .mobile-nav__content .main-menu__list li a.expanded {
