@@ -41,7 +41,7 @@
     var dt = new Date;
     dt.setMinutes( dt.getMinutes() + dt.getTimezoneOffset() ); // 当前时间(分钟) + 时区偏移(分钟)
 
-    var dt_hour = -7;
+    var dt_hour = -8;
     var dt_min  = 0;
 
     
