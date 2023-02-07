@@ -363,7 +363,7 @@ $("#selectFolder").change(function(){
       btnSubmit.className = "button small wide smooth-scroll-middle";
       btnSubmit.textContent = "Submit";
       
-     btnSelectFile.addEventListener("click", e => {
+      btnSelectFile.addEventListener("click", e => {
         //Select File **SET SIZE CONSTRAINTS
         fileSelecterbtn.click();
         $(fileSelecterbtn).change(function(e){
@@ -470,16 +470,27 @@ $("#selectFolder").change(function(){
 
         let footer = document.createElement("div");
         footer.className = "footer";
+
+        let fileTime = document.createElement("span");
+        fileTime.className = "fileTime";
+        fileTime.textContent = "";
+
+        let fileLink = document.createElement("a");
+        fileLink.className = "fileLink";
+        fileLink.id = "user-file-label"; 
+        fileLink.textContent = "No files";
+        fileLink.target = '_blank';
+
         let fileLabel = document.createElement("label");
-        fileLabel.id = "user-file-label";
-        fileLabel.textContent = "No files";
+        // fileLabel.id = "user-file-label";
+        // fileLabel.textContent = "No files";
   
   
         let btnFileDownload = document.createElement("button");
         btnFileDownload.id = "btnFileDownload";
         btnFileDownload.className = "button small icon solid fab fa fa-download smooth-scroll-middle";
         btnFileDownload.textContent = "Download";
-	    btnFileDownload.style.marginLeft="10pt";
+	      btnFileDownload.style.marginLeft="10pt";
         btnFileDownload.addEventListener("click", e => {
           //Start Download
           console.log("Download Clicked");
@@ -544,12 +555,30 @@ $("#selectFolder").change(function(){
   
         if(itemRef != null){
           fileLabel.textContent = itemRef.name;
+          fileLink.textContent = itemRef.name;
         }
+             
+        // console.log(itemRef.getMetadata());
+        itemRef.getDownloadURL().then((url) => {
+          // console.log(url);
+          fileLink.href = url;
+        });
+
+        itemRef.getMetadata().then((metadata) => {
+            //  console.log(metadata);
+             fileTime.textContent  = metadata.timeCreated.split('T')[0];
+             console.log(fileTime);
+        });
+
+        fileLink.title = fileLabel;
+        fileLink.id= "fileLabel";
+        console.log("Open Link Here:",fileLink);
   
- 
+        footer.appendChild(fileTime);
         footer.appendChild(btnFileDownload);
         footer.appendChild(btnFileDelete);
-        footer.appendChild(fileLabel);
+        footer.appendChild(fileLink);
+        // footer.appendChild(fileLabel);
         // $(".footer").css('textAlign', 'left');
 
 

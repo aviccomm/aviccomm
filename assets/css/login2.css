@@ -174,9 +174,6 @@ added by liang 09.07.2021
 padding-top: 80px;
 padding-bottom: 40px;
 }
-.login-page {
-	margin-bottom: 60px;
-}
 /* Banner (style2) */
 .banner.style2 {
 	-moz-align-items: center;
@@ -296,7 +293,7 @@ padding-bottom: 40px;
 @media screen and (max-width: 1280px) {
 
 	.banner.style2 {
-		padding: 0rem 3rem 2rem 3rem ;
+		padding: 1.5rem 3rem 2rem 3rem ;
 	}
 
 	.banner.style2 .content {
@@ -319,7 +316,7 @@ padding-bottom: 40px;
 
 @media screen and (max-width: 736px) {
 	.banner.style2 {
-		padding: 9.5rem 0rem 0.1rem 0rem ;
+		padding: 11rem 0rem 0.1rem 0rem ;
 	}
 	.banner.style2 .content {
 		padding: 2rem 0.15rem 0.5rem 0.15rem ;
@@ -398,7 +395,7 @@ padding-bottom: 40px;
 /* Form */
 
 form {
-  margin: 0 0 1rem 0;
+  margin: 0 0 2rem 0;
 }
   form.stacked {
     -moz-flex-direction: column;
@@ -456,7 +453,7 @@ form {
       -webkit-flex-shrink: 0;
       -ms-flex-shrink: 0;
       flex-shrink: 0;
-      padding: 0.5rem 1rem 0.75rem;
+      padding: 1.5rem 1rem 0 1rem;
       width: calc(80% +4rem  );      /*100%*/
       text-align: center;    /* liang */
 
@@ -488,13 +485,11 @@ form {
 
 /* Actions */
 .actions{
-padding: 20px 0px 0px;
+padding: 20px 0px;
+min-height: 50%;
 }
-.action2{
-	padding: 20px 0px 20px;
-}
-.action3{
-	padding: 50px 0px 20px;
+.actions2{
+	padding: 20px 0px 0px;
 }
 ul.actions {
   display: -moz-flex;
@@ -717,5 +712,3 @@ ul.actions {
 	color:black;
 	padding-right: 30px;
 }
-
-
