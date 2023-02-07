@@ -620,7 +620,7 @@ canvas {
     float: left;
     /* padding-top: 33px;
     padding-bottom: 32px; */
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 4px;
     margin-right: 155px;
 }
@@ -649,7 +649,7 @@ canvas {
     }
 }
 
-/* added by Liang 2023-02-06 */
+/* added by Liang 2023-02-06 */ 
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
     .main-menu-wrapper__logo {
         padding-top: 20px;
@@ -664,8 +664,8 @@ canvas {
 }
 @media (max-width: 767px) {
     .main-menu-wrapper__logo {
-        padding-top: 25px;
-        padding-bottom: 4px;
+        padding-top: 30px;
+        padding-bottom: 0px;
     }
 }
 
@@ -794,15 +794,15 @@ canvas {
 .main-menu .main-menu__list>li,
 .stricky-header .main-menu__list>li {
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     position: relative;
 }
 
-@media only screen and (min-width: 1201px) and (max-width: 1999.98px) {
+@media only screen and (min-width: 1200px) and (max-width: 1999.98px) {
     .main-menu .main-menu__list>li,
     .stricky-header .main-menu__list>li {
         padding-top: 20px;
-        padding-bottom: 10px;
+        padding-bottom: 6px;
         position: relative;
     }
 }
@@ -4475,8 +4475,8 @@ canvas {
 .project-two {
     position: relative;
     display: block;
-    padding: 0 0 50px;
-    margin-bottom: 70px;
+    padding: 0 0 10px;
+    margin-bottom: 50px;
     
 }
 

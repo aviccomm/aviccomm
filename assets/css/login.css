@@ -400,91 +400,91 @@ padding-bottom: 40px;
 form {
   margin: 0 0 1rem 0;
 }
-  form.stacked {
-    -moz-flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-left: 0;
-  }
-    form.stacked li {
-      padding: 1.3rem 0 0 0;
-    }
-      form.stacked li:first-child {
-        padding-top: 0;
-      }
-
-  form > :last-child {
-    margin-bottom: 0;
-  }
-
-  form > .fields {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    -moz-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    width: calc(100% );
-    text-align: center;    /* liang */
-    margin: -1.5rem 0.5rem 2rem 0.5rem;
-
-  }
-    form > .fields.stacked {
-      -moz-flex-direction: column;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      margin-left: 0;
-    }
-
-	form > .fields.stacked li {
+form.stacked {
+	-moz-flex-direction: column;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	margin-left: 0;
+}
+form.stacked li {
 	padding: 1.3rem 0 0 0;
+}
+	form.stacked li:first-child {
+	padding-top: 0;
 	}
 
-	form > .fields.stacked li:first-child {
-		padding-top: 0;
+form > :last-child {
+margin-bottom: 0;
+}
+
+form > .fields {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	width: calc(100% );
+	text-align: center;    /* liang */
+	margin: -1.5rem 0.5rem 2rem 0.5rem;
+
+}
+form > .fields.stacked {
+	-moz-flex-direction: column;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	margin-left: 0;
+}
+
+form > .fields.stacked li {
+padding: 1.3rem 0 0 0;
+}
+
+form > .fields.stacked li:first-child {
+	padding-top: 0;
+}
+form > .fields > .field {
+	-moz-flex-grow: 0;
+	-webkit-flex-grow: 0;
+	-ms-flex-grow: 0;
+	flex-grow: 0;
+	-moz-flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+	-ms-flex-shrink: 0;
+	flex-shrink: 0;
+	padding: 0.5rem 1rem 0.75rem;
+	width: calc(80% +4rem  );      /*100%*/
+	text-align: center;    /* liang */
+
+}
+form > .fields > .field > input{
+	font-size: 14pt;
+	font-weight: 500;
+	color:gray;
+}
+form > .fields > .field > input:hover{
+	color:darkgreen;
+}
+form > .fields > .field > input:focus::placeholder{
+	opacity: 0;
+}
+
+	form > .fields > .field.half {
+	width: calc(50% - 0.75rem);
+
 	}
-    form > .fields > .field {
-      -moz-flex-grow: 0;
-      -webkit-flex-grow: 0;
-      -ms-flex-grow: 0;
-      flex-grow: 0;
-      -moz-flex-shrink: 0;
-      -webkit-flex-shrink: 0;
-      -ms-flex-shrink: 0;
-      flex-shrink: 0;
-      padding: 0.5rem 1rem 0.75rem;
-      width: calc(80% +4rem  );      /*100%*/
-      text-align: center;    /* liang */
 
-    }
-	form > .fields > .field > input{
-		font-size: 14pt;
-		font-weight: 500;
-		color:gray;
-	}
-	form > .fields > .field > input:hover{
-		color:darkgreen;
-	}
-	form > .fields > .field > input:focus::placeholder{
-		opacity: 0;
+	form > .fields > .field.third {
+	width: calc(100%/3 - 0.5rem);
 	}
 
-      form > .fields > .field.half {
-        width: calc(50% - 0.75rem);
-
-      }
-
-      form > .fields > .field.third {
-        width: calc(100%/3 - 0.5rem);
-      }
-
-      form > .fields > .field.quarter {
-        width: calc(25% - 0.375rem);
-      }
+	form > .fields > .field.quarter {
+	width: calc(25% - 0.375rem);
+	}
 
 /* Actions */
 .actions{
@@ -497,179 +497,195 @@ padding: 20px 0px 0px;
 	padding: 50px 0px 20px;
 }
 ul.actions {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  cursor: default;
-  list-style: none;
-  margin-left: -1rem;
-  padding-left: 0;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	cursor: default;
+	list-style: none;
+	margin-left: -1rem;
+	padding-left: 0;
 }
 
-  ul.actions li {
-    padding: 0 0 0 1rem;
-    vertical-align: middle;
-  }
+ul.actions li {
+	padding: 0 0 0 1rem;
+	vertical-align: middle;
+}
 
-  ul.actions.special {
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
-    width: 100%;
-    margin-left: 0;
-  }
+ul.actions.special {
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	width: 100%;
+	margin-left: 0;
+}
 
-    ul.actions.special li:first-child {
-      padding-left: 0;
-    }
+ul.actions.special li:first-child {
+	padding-left: 0;
+}
 
-  ul.actions.stacked {
-    -moz-flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-left: 0;
-  }
+ul.actions.stacked {
+	-moz-flex-direction: column;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	margin-left: 0;
+}
 
-    ul.actions.stacked li {
-      padding: 1.3rem 0 0 0;
-    }
+ul.actions.stacked li {
+	padding: 1.3rem 0 0 0;
+}
 
-      ul.actions.stacked li:first-child {
-        padding-top: 0;
-      }
+	ul.actions.stacked li:first-child {
+	padding-top: 0;
+	}
 
-  ul.actions.fit {
-    width: calc(100% + 1rem);
-  }
+ul.actions.fit {
+	width: calc(100% + 1rem);
+}
 
-    ul.actions.fit li {
-      -moz-flex-grow: 1;
-      -webkit-flex-grow: 1;
-      -ms-flex-grow: 1;
-      flex-grow: 1;
-      -moz-flex-shrink: 1;
-      -webkit-flex-shrink: 1;
-      -ms-flex-shrink: 1;
-      flex-shrink: 1;
-      width: 100%;
-    }
+ul.actions.fit li {
+	-moz-flex-grow: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
+	-moz-flex-shrink: 1;
+	-webkit-flex-shrink: 1;
+	-ms-flex-shrink: 1;
+	flex-shrink: 1;
+	width: 100%;
+}
 
-      ul.actions.fit li > * {
-        width: 100%;
-      }
+	ul.actions.fit li > * {
+	width: 100%;
+	}
 
-    ul.actions.fit.stacked {
-      width: 100%;
-    }
+ul.actions.fit.stacked {
+	width: 100%;
+}
 
-  @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
-    ul.actions:not(.fixed) {
-      -moz-flex-direction: column;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      margin-left: 0;
-      width: 100% !important;
-    }
+	ul.actions:not(.fixed) {
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		margin-left: 0;
+		width: 100% !important;
+	}
 
-      ul.actions:not(.fixed) li {
-        -moz-flex-grow: 1;
-        -webkit-flex-grow: 1;
-        -ms-flex-grow: 1;
-        flex-grow: 1;
-        -moz-flex-shrink: 1;
-        -webkit-flex-shrink: 1;
-        -ms-flex-shrink: 1;
-        flex-shrink: 1;
-        padding: 1rem 0 0 0;
-        text-align: center;
-        width: 100%;
-      }
+	ul.actions:not(.fixed) li {
+		-moz-flex-grow: 1;
+		-webkit-flex-grow: 1;
+		-ms-flex-grow: 1;
+		flex-grow: 1;
+		-moz-flex-shrink: 1;
+		-webkit-flex-shrink: 1;
+		-ms-flex-shrink: 1;
+		flex-shrink: 1;
+		padding: 1rem 0 0 0;
+		text-align: center;
+		width: 100%;
+	}
 
-        ul.actions:not(.fixed) li > * {
-          width: 100%;
-        }
+	ul.actions:not(.fixed) li > * {
+		width: 100%;
+	}
 
-        ul.actions:not(.fixed) li:first-child {
-          padding-top: 0;
-        }
+	ul.actions:not(.fixed) li:first-child {
+		padding-top: 0;
+	}
 
-        ul.actions:not(.fixed) li input[type="submit"],
-        ul.actions:not(.fixed) li input[type="reset"],
-        ul.actions:not(.fixed) li input[type="button"],
-        ul.actions:not(.fixed) li button,
-        ul.actions:not(.fixed) li .button {
-          width: 100%;
-        }
+	ul.actions:not(.fixed) li input[type="submit"],
+	ul.actions:not(.fixed) li input[type="reset"],
+	ul.actions:not(.fixed) li input[type="button"],
+	ul.actions:not(.fixed) li button,
+	ul.actions:not(.fixed) li .button {
+	width: 100%;
+	}
 
-          ul.actions:not(.fixed) li input[type="submit"].icon:before,
-          ul.actions:not(.fixed) li input[type="reset"].icon:before,
-          ul.actions:not(.fixed) li input[type="button"].icon:before,
-          ul.actions:not(.fixed) li button.icon:before,
-          ul.actions:not(.fixed) li .button.icon:before {
-            margin-left: -0.5rem;
-          }
+	ul.actions:not(.fixed) li input[type="submit"].icon:before,
+	ul.actions:not(.fixed) li input[type="reset"].icon:before,
+	ul.actions:not(.fixed) li input[type="button"].icon:before,
+	ul.actions:not(.fixed) li button.icon:before,
+	ul.actions:not(.fixed) li .button.icon:before {
+	margin-left: -0.5rem;
+	}
 
-  }
+}
+
+.fileTime{
+	color:darkblue;
+	text-decoration: none;
+}
+.fileLink{
+	padding: 0px 0px 0px 10px;
+	color:#292421;
+	text-decoration: none;
+}
+.fileLink:hover{
+	color:blue;
+	font-weight: 550;
+	background: none;
+}
+
 
   /* Image */
 
-	.image {
-		border: 0;
-		border-radius: 4px;
-		display: inline-block;
-		position: relative;
+.image {
+	border: 0;
+	border-radius: 4px;
+	display: inline-block;
+	position: relative;
+}
+
+.image img {
+	display: block;
+	border-radius: 4px;
+}
+
+.image.left, .image.right {
+	width: 60%;
+	max-width: 30rem;
+}
+
+	.image.left img, .image.right img {
+		width: 100%;
 	}
 
-		.image img {
-			display: block;
-			border-radius: 4px;
-		}
+.image.left {
+	float: left;
+	margin: 0 2rem 1rem 5rem;
+	top: 0.25rem;
+}
 
-		.image.left, .image.right {
-			width: 60%;
-			max-width: 30rem;
-		}
+.image.right {
+	float: right;
+	margin: 0 0 1rem 1.5rem;
+	top: 0.25rem;
+}
 
-			.image.left img, .image.right img {
-				width: 100%;
-			}
+.image.fit {
+	display: block;
+	margin: 0 0 2rem 0;
+	width: 100%;
+}
 
-		.image.left {
-			float: left;
-			margin: 0 2rem 1rem 5rem;
-			top: 0.25rem;
-		}
+.image.fit img {
+	width: 100%;
+}
 
-		.image.right {
-			float: right;
-			margin: 0 0 1rem 1.5rem;
-			top: 0.25rem;
-		}
+.image.main {
+	display: block;
+	margin: 0 0 3rem 0;
+	width: 100%;
+}
 
-		.image.fit {
-			display: block;
-			margin: 0 0 2rem 0;
-			width: 100%;
-		}
-
-    .image.fit img {
-      width: 100%;
-    }
-
-		.image.main {
-			display: block;
-			margin: 0 0 3rem 0;
-			width: 100%;
-		}
-
-    .image.main img {
-      width: 100%;
-    }
+.image.main img {
+	width: 100%;
+}
 
 
 /* Liang 2022 0305              */
