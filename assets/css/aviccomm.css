@@ -633,6 +633,8 @@ canvas {
     display: block;
     float: left;
 }
+
+
 @media only screen and (min-width: 2000px)  {
     .main-menu-wrapper__main-menu{ 
         margin-left: 400px;
@@ -778,7 +780,7 @@ canvas {
     display: none;
 }
 .main-menu .main-menu__list .nav-multiple{
-    width: 410px;
+    width: 400px;
 }
 
 @media (min-width: 1200px) {
@@ -814,7 +816,7 @@ canvas {
 
 .main-menu .main-menu__list>li>a,
 .stricky-header .main-menu__list>li>a {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 550;
     display: flex;
     align-items: center;
@@ -908,7 +910,7 @@ canvas {
 
 .main-menu .main-menu__list li ul li a,
 .stricky-header .main-menu__list li ul li a {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 30px;
     color: var(--thm-black);
     display: flex;

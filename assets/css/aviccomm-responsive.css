@@ -1163,7 +1163,19 @@
 /////////
 --------------------------------------------------------------*/
 
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+@media only screen and (min-width: 2000px) {
+
+}
+
+
+
+@media only screen and (min-width: 1500px) and (max-width: 1999px) {
+
+
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1499px) {
     .main-menu-wrapper__call {
         display: none;
     }
@@ -1171,8 +1183,6 @@
     .main-menu-wrapper__logo {
         margin-right: 100px;
     }
-
-
 
 }
 
@@ -1196,20 +1206,6 @@
     .main-menu-two .mobile-nav__toggler:hover {
         color: var(--thm-black);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
@@ -1236,17 +1232,6 @@
     .main-menu-two .mobile-nav__toggler:hover {
         color: var(--thm-black);
     }
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -1288,6 +1273,7 @@
         color: var(--thm-black);
     }
 }
+
 
 
 /*added by Liang 2022-03-11*/
