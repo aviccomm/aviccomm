@@ -36,18 +36,46 @@
     var dgts = [];
     var nums = ['1','2','3','4','5','6','7','8','9','10','11','12'];
   
+    /* -------------------------------------------------------------------------------------- */
     var dt  = new Date;
-    console.log( dt.getTimezoneOffset() ); // -480
-    var dt = new Date;
+    // console.log( dt.getTimezoneOffset() ); // -480
     dt.setMinutes( dt.getMinutes() + dt.getTimezoneOffset() ); // 当前时间(分钟) + 时区偏移(分钟)
 
-    var dt_hour = -5;
+    var dt_hour = -4;
     var dt_min  = 0;
 
-    
-    // console.log( "dt 1st: ", dt.getDate(),dt.toLocaleString());
     dt.setMinutes( dt.getMinutes() + dt_hour*60 + dt_min); // calculate local time
-    // console.log( "dt 2nd: ", dt.getDate(),dt.toLocaleString());
+
+    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    var month_now=dt.getMonth()+1;
+    var ddy = days[dt.getDay()];   
+    var ddt = dt.getDate();                        // get day
+    var ddh = dt.getHours();                       // get hour
+    var yy =dt.getDay();                           // get date of Sunday to Satursday
+    var winter = 0;    
+
+    if (month_now >3 && month_now <11){winter = 0;}
+    else if (month_now == 3){
+        if (ddt >= 8 && ddt <= 14){
+            if(ddt-7 < yy+1){ winter = 1;}
+            else{
+                if (yy==0){if (ddh<2){winter = 1;}else{winter =0;} }
+                else{winter = 0;}}}
+        else if (ddt < 8){ winter = 1;}
+        else{winter = 0;}}
+    else if (month_now == 11){
+        if (ddt >= 1 && ddt <= 7){
+            if(ddt < yy+1){ winter = 0;}
+            else{
+                if (yy==0){if (ddh<2){winter = 0;}else{winter =1;} }
+                else{winter = 1;}}}
+        else{winter = 1;}}
+    else{ 
+        winter = 1;
+    }
+
+    dt.setMinutes( dt.getMinutes() - winter*60 + dt_min); // calculate winter time
+    document.getElementById("time_ny").innerHTML  = "(" + (dt_hour -winter) + ")"; 
 
     function iniTime() { 
         var now = new Date();
@@ -62,6 +90,16 @@
     // }
     iniTime();
     mincr--;
+
+
+    // console.log("winter_time: ",winter);
+    // console.log("number of hour: ",ddh, typeof(ddh));
+
+    // console.log( "dt value: ", dt);
+    // console.log( "dt value2: ", dt.getDate(), dt.toLocaleString());
+    // console.log("month_now: ", month_now);
+    // console.log( "varibles 00: ", ddy, ddt, hincr, mincr);
+
     // console.log( "current time: ",hincr, mincr);
     
     function xy (v) {
@@ -345,8 +383,8 @@
     var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     var n = new Date();
     var month_now=dt.getMonth()+1;
-    ddy = days[dt.getDay()];
-    ddt = dt.getDate();
+    // var ddy = days[dt.getDay()];
+    // var ddt = dt.getDate();
 
     // console.log( "dt value: ", dt.getDate(),dt.toLocaleString());
     // console.log( "n value: ", n.getDate(),n.toLocaleString());

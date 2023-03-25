@@ -36,16 +36,47 @@
     var dgts = [];
     var nums = ['1','2','3','4','5','6','7','8','9','10','11','12'];
 
+    /* -------------------------------------------------------------------------------------- */
     var dt  = new Date;
     // console.log( dt.getTimezoneOffset() ); // -480
-    var dt = new Date;
     dt.setMinutes( dt.getMinutes() + dt.getTimezoneOffset() ); // 当前时间(分钟) + 时区偏移(分钟)
 
-    var dt_hour = 1;
+    var dt_hour = 2;
     var dt_min  = 0;
 
-    
     dt.setMinutes( dt.getMinutes() + dt_hour*60 + dt_min); // calculate local time
+
+    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    var month_now=dt.getMonth()+1;
+    var ddy = days[dt.getDay()];   
+    var ddt = dt.getDate();                        // get day
+    var ddh = dt.getHours();                       // get hour
+    var yy =dt.getDay();                           // get date of Sunday to Satursday
+    var winter = 0;    
+
+    if (month_now >3 && month_now <10){winter = 0;}
+    else if (month_now == 3){
+        if (ddt >= 25 && ddt <= 31){
+            if(ddt-24 < yy+1){ winter = 1;}
+            else{
+                if (yy==0){if (ddh<2){ winter = 1;}else{winter =0;} }
+                else{winter = 0;}}}
+        else{winter = 1;}}
+    else if (month_now == 10){
+        if (ddt >= 25 && ddt <= 31){
+            if(ddt-24 < yy+1){ winter = 1;}
+            else{
+                if (yy==0){if (ddh<3){ winter = 0;}else{winter =1;} }
+                else{winter = 1;}}}
+        else{winter = 0;}}
+    else{ 
+        winter = 1;
+    }
+
+    dt.setMinutes( dt.getMinutes() - winter*60 + dt_min); // calculate winter time
+    document.getElementById("time_Paris").innerHTML  = "(+" + (dt_hour -winter) + ")"; 
+    document.getElementById("time_Denmark").innerHTML  = "(+" + (dt_hour -winter) + ")"; 
+
     function iniTime() { 
         var now = new Date();
         mincr = dt.getMinutes();
@@ -59,6 +90,17 @@
     // }
     iniTime();
     mincr--;
+
+
+    // console.log("winter_time: ",winter);
+    // console.log("number of hour: ",ddh, typeof(ddh));
+
+    // console.log( "dt value: ", dt);
+    // console.log( "dt value2: ", dt.getDate(), dt.toLocaleString());
+    // console.log("month_now: ", month_now);
+    // console.log( "varibles 00: ", ddy, ddt, hincr, mincr);
+
+
     // console.log( "current time: ",hincr, mincr);
     
     function xy (v) {

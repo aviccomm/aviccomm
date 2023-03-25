@@ -1,21 +1,39 @@
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Utility
-# Cards
-# Common
-# Form
-# Navigations
-# Animations
-# Mobile Nav
-# Search Popup
-# Page Header
-# Google Map
-# Client Carousel
+01. Common
+02. Navigations
+03. Animations
+04. Mobile Nav
+05. Search Popup
+06. Main Slider
+07. About
+08. Services
+09. Project
+10. Improve One
+
+11. Testimonial One
+12. News One
+13. Site Footer
+14. Business Growth
+15. Welcome One
+16. Video One
+17. Team One
+18. Page Header
+19. Services Details
+20. Project Details
+
+21. News Details
+22. Sidebar
+23. Contact Page
+24. Special CSS
+25. Web Clock
+26. backend design
+27. data page
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-# Common
+01. Common
 --------------------------------------------------------------*/
 :root {
     --thm-font: 'Barlow', sans-serif;
@@ -54,6 +72,31 @@ body {
 body.locked {
     overflow: hidden;
 }
+/*---------------------------------------
+    - background
+-----------------------------------------*/
+.bg-primery{background-color:#341fff !important}
+.bg-gray-500{background-color:#999 !important}
+.bg-grayphite{background-color:#ededed !important}
+.bg-solitaire{background-color:#fef6e9 !important}
+    /* .bg-black{background-color:#000 !important} */
+    /* .bg-secondary{background-color:#6c757d !important} */
+    /* .bg-success{background-color:#28a745 !important} */
+    /* .bg-danger{background-color:#dc3545 !important} */
+    /* .bg-warning{background-color:#ffc107 !important} */
+    /* .bg-info{background-color:#17a2b8 !important} */
+    /* .bg-light{background-color:#f8f9fa !important} */
+.bg-darkk{background-color:#343a40 !important}
+    /* .bg-primary{background-color:#1c1d1e !important} */
+    /* .bg-white{background-color:#fff !important} */
+.bg-black-pearl{background-color:#1c1d1e !important}
+.bg-dark-gray{background-color:#a8a8a8 !important}
+.bg-school-yellow{background-color:#ffda00 !important}
+.bg-white-smoke{background-color:#f4f4f4 !important}
+.bg-dim-gray{background-color:#747474 !important}
+.bg-silver{background-color:#bebebe !important}
+.bg-aluminium{background-color:#818a91 !important}
+
 
 a{
     color:#006400;/* SandyBrown  */
@@ -204,7 +247,6 @@ canvas {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    -webkit-appearance: none;
     border: none;
     outline: none !important;
     background-color: var(--thm-primary);
@@ -469,7 +511,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# Navigations One
+02. Navigations One
 --------------------------------------------------------------*/
 .main-header {
     position: relative;
@@ -1022,9 +1064,9 @@ canvas {
 }
 
 
-/*--------------------------------------------------------------
+/*-------------------
 # Navigations Two
---------------------------------------------------------------*/
+-------------------*/
 .main-header-two {
     position: relative;
     display: block;
@@ -1032,7 +1074,7 @@ canvas {
 
 
 /*--------------------------------------------------------------
-# Animations
+03. Animations
 --------------------------------------------------------------*/
 @keyframes bubbleMover {
     0% {
@@ -1257,7 +1299,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# Mobile Nav
+04. Mobile Nav
 --------------------------------------------------------------*/
 .mobile-nav__wrapper {
     position: fixed;
@@ -1486,7 +1528,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# Search Popup
+05. Search Popup
 --------------------------------------------------------------*/
 .search-popup {
     position: fixed;
@@ -1564,7 +1606,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# Main Slider
+06. Main Slider
 --------------------------------------------------------------*/
 .main-slider {
     position: relative;
@@ -2141,7 +2183,7 @@ canvas {
     transform: scale(1.05);
 }
 /*--------------------------------------------------------------
-# About One
+07. About
 --------------------------------------------------------------*/
 .about-one {
     position: relative;
@@ -2332,7 +2374,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# Services One
+08. Services
 --------------------------------------------------------------*/
 .services-one {
     position: relative;
@@ -2647,7 +2689,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# Project One
+09. Project
 --------------------------------------------------------------*/
 .project-one {
     position: relative;
@@ -2839,7 +2881,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# Improve One
+10. Improve One
 --------------------------------------------------------------*/
 .improve-one {
     position: relative;
@@ -3011,7 +3053,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# Testimonial One
+11. Testimonial One
 --------------------------------------------------------------*/
 .testimonial-one {
     position: relative;
@@ -3155,7 +3197,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# News One
+12. News One
 --------------------------------------------------------------*/
 .news-one {
     position: relative;
@@ -3349,9 +3391,9 @@ canvas {
     color: var(--thm-extra);
 }
 
-/*--------------------------------------------------------------
-# News One
---------------------------------------------------------------*/
+/*------------------
+# 
+------------------*/
 .cta-one {
     position: relative;
     display: block;
@@ -3425,7 +3467,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# Site Footer
+13. Site Footer
 --------------------------------------------------------------*/
 .site-footer {
     position: relative;
@@ -3774,7 +3816,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# Business Growth
+14. Business Growth
 --------------------------------------------------------------*/
 .business-growth {
     position: relative;
@@ -3983,7 +4025,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# Welcome One
+15. Welcome One
 --------------------------------------------------------------*/
 .welcome-one {
     position: relative;
@@ -4142,7 +4184,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# Video One
+16. Video One
 --------------------------------------------------------------*/
 .video-one {
     position: relative;
@@ -4813,7 +4855,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# Team One
+17. Team One
 --------------------------------------------------------------*/
 .team-one {
     position: relative;
@@ -5306,7 +5348,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# Page Header
+18. Page Header
 --------------------------------------------------------------*/
 .page-header {
     position: relative;
@@ -5426,7 +5468,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# Services Details
+19. Services Details
 --------------------------------------------------------------*/
 .service-details {
     position: relative;
@@ -5814,7 +5856,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# Project Details
+20. Project Details
 --------------------------------------------------------------*/
 .project-details {
     position: relative;
@@ -6074,7 +6116,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# News Details
+21. News Details
 --------------------------------------------------------------*/
 .news-details {
     position: relative;
@@ -6412,7 +6454,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# Sidebar
+22. Sidebar
 --------------------------------------------------------------*/
 
 @media (max-width: 991px) {
@@ -6677,7 +6719,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# Contact Page
+23. Contact Page
 --------------------------------------------------------------*/
 .contact-page {
     position: relative;
@@ -6890,7 +6932,7 @@ canvas {
 }
 
 /*--------------------------------------------------------------
-# About Two
+24. Special CSS
 --------------------------------------------------------------*/
 .about-two {
     position: relative;
@@ -7004,22 +7046,7 @@ canvas {
     padding: 60px 0 20px;
 }
 
-/*--------------------------------------------------------------
-# About Three
---------------------------------------------------------------*/
-.about-three {
-    position: relative;
-    display: block;
-    padding: 30px 0px 30px;
-}
 
-.about-three2 {
-    position: relative;
-    display: block;
-    padding: 0 0 120px;
-    margin-bottom: 20px;
-    background:#FFFAF0;
-}
 
 /*Services Two*/
 .services-two {
@@ -7267,40 +7294,109 @@ Added by Liang 2021-12-28
 
 
 /*  css for the clock page 2022-03-27     */
-.clock-siemens{
+/*--------------------------------------------------------------
+25. Web clock 
+--------------------------------------------------------------*/
+/*----------      web-clock  ---------*/
+.web-clock{
     text-align: center;
-}
-.clock-siemens a{
-    text-decoration:none;
-}
-.clock-siemens h3{
-    text-align: center;
-    font-size: 28px;
-    margin: 0;
-    line-height: 27px;
-    transition: all 500ms ease;
-    font-weight: 600;
-    padding: 10px 0px;
-}
-
-.clock-siemens2{
-    text-align: center;
-}
-.clock-siemens2 h3{
-    text-align: center;
-    font-size: 20pt;
-    color: darkgreen;
-}
-@media only screen and (min-width: 768px) and (max-width: 1280px) {
-    .clock-siemens span{ 
-        font-size: 18pt;color: darkblue;
-    }
-}
-@media screen and (max-width: 767.98px) {
-    .clock-siemens span{ 
-        font-size: 20pt;color: darkblue;
-    }
-}
-
-
-
+  }
+  .web-clock h3{
+    font: 550 28px "Roboto", sans-serif;
+    padding: 4px 0px 6px 10px;
+  }
+  .web-clock h4{
+    font: 550 25px "Roboto", sans-serif;
+    padding: 4px 0px 6px 10px;
+  }
+  .web-clock h3:hover, .web-clock h4:hover{
+    color: #FF4500;  
+  }
+  .web-clock h4 span{
+    font-size: 24px;
+  }
+  .web-clock .title{
+    font: 550 26px "Roboto", sans-serif;
+    padding: 4px 0px 6px 10px;
+  }
+  .web-clock ol{
+    list-style-type: decimal;
+  }
+  .web-clock ol li{
+    font: 400 17px "Roboto", sans-serif;
+    line-height: 1.9em;
+    text-align: left;
+    padding: 4px 2px 4px; 
+  }
+  .web-clock ol li a{
+    display: inline;
+    color: #0000AB; 
+    padding-right: 6px;
+  }
+  .web-clock ol li a:hover{
+    font-weight: 500;
+    color: #0000FF;          
+      text-decoration:none;
+    padding-right: 2px;
+  }
+  .web-clock ol li a:active{color:red}
+  
+  /*----------      web-clock 2  ---------*/
+  
+  /* .web-clock2{background-color:#1c1d1e;} */
+  .web-clock2:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(129.29deg, rgba(0, 0, 0, 0.6) 16.77%, rgba(0, 0, 0, 0.3) 74.33%);
+  }
+  .web-clock2 .webclock-top{
+    padding: calc(35vh + 100px) 0px;
+  }
+  .web-clock2 .clock {opacity: 1;}
+  .web-clock2 .fill .clock {left: 50%;top: 50%;}
+  .web-clock2 .centre {position: relative;top: 50%;left: 50%;width: 0;height: 0;}
+  .web-clock2 .expand {position: absolute;top: 0;left: 0;transform: translate(-50%, -50%);}
+  .web-clock2 .anchor {position: absolute;top: 0;left: 0;width: 0;height: 0;}
+  .web-clock2 .element {position: absolute;top: 0;left: 0;}
+  .web-clock2 .round {border-radius: 296px;}
+  .web-clock2 .circle-1 {background: white;width: 12px;height: 12px;}
+  .web-clock2 .circle-2 {background: #FA9F22;width: 8px;height: 8px;}
+  .web-clock2 .circle-3 {background: black;width: 4px;height: 4px;}
+  .web-clock2 .second {transform: rotate(180deg);}
+  .web-clock2 .minute {transform: rotate(54deg);}
+  .web-clock2 .second-hand {width: 2px;height: 164px;background: #FA9F22;transform: translate(-50%,-100%) translateY(24px);}
+  .web-clock2 .hour {transform: rotate(304.5deg);}
+  .web-clock2 .thin-hand {width: 4px;height: 50px;background: white;transform: translate(-50%,-100%);}
+  .web-clock2 .fat-hand {width: 10px;height: 57px;border-radius: 10px;background: white;transform: translate(-50%,-100%) translateY(-18px);}
+  .web-clock2 .minute-hand {height: 112px;}
+  .web-clock2 .hour-text {position: absolute;font: 40px Hei, Helvetica, Arial, sans-serif;color: white;transform: translate(-50%,-50%);}
+  .web-clock2 .hour-10 {padding-left: 0.4ex;}
+  .web-clock2 .hour-11 {padding-left: 0.25ex;}
+  .web-clock2 .minute-text {position: absolute;font: 12px Avenir Next, Helvetica, Arial, sans-serif;color: white;transform: translate(-50%,-50%);}
+  .web-clock2 .minute-line {background: white;width: 1px;height: 9px;transform: translate(-50%,-100%) translateY(-131px);opacity: 0.34;}
+  
+  
+  @media (min-width: 1600px) {
+  
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1599.98px) {
+    .web-clock2 .webclock-top{padding: calc(30vh + 100px) 0px;}
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .web-clock2 .webclock-top{padding: calc(30vh + 100px) 0px;}
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .web-clock2 .webclock-top{padding: calc(28vh + 100px) 0px;}
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    .web-clock2 .webclock-top{padding: calc(24vh + 100px) 0px;}
+  }
+  @media (max-width: 575.98px) {
+    .web-clock2 .webclock-top{padding: calc(18vh + 100px) 0px;}
+  }
+  
